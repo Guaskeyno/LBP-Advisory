@@ -38,13 +38,13 @@ js/search.js                  Site search (cerca.html)
 js/data/search-index.js       Search index, one entry per page
 
 assets/fonts/                 Meghana (woff2 + otf)
-assets/img/                   Logo placeholders
+assets/images/                Logos + uploaded images
 ```
 
 ## Content notes
 
 - All images are placeholders (`.ph` elements). Replace each with an `<img>` (or a background image).
-- `assets/img/logo.svg` / `logo-white.svg` are placeholders for the LB Advice logo.
+- Logos live in `assets/images/` (`logo.svg`, `logo-white.svg`).
 - Filter dropdowns fill themselves from the `data-*` attributes on each card
   (`data-mercati`, `data-area`, `data-anno`, `data-ruolo`, `data-tipologia`; multiple values separated by `|`).
 - Header and footer are repeated in every page; edit them in all pages when they change.
