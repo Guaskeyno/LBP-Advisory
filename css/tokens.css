@@ -1,0 +1,75 @@
+/* ==========================================================================
+   LB Advice — design tokens
+   Visual language from the L&B group reference site (lbcapitalsgr.it).
+   Only the main UI colour differs: #E5E4E2 replaces the reference #C5D9C9.
+   ========================================================================== */
+
+@font-face {
+  font-family: "Meghana";
+  src: url("../assets/fonts/Meghana.woff2") format("woff2"),
+       url("../assets/fonts/Meghana.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Colour */
+  --color-main: #e5e4e2;          /* main UI colour (reference: #c5d9c9) */
+  --color-main-tint: #efeeed;     /* lighter tint of main (reference: #dbe7dd) */
+  --color-main-shade: #d3d2cf;    /* darker shade of main, used for placeholders */
+  --color-primary: #193448;       /* reference navy: text, buttons, dark sections */
+  --color-primary-alt: #192848;   /* reference button gradient midpoint */
+  --color-surface: #f2f2f2;       /* cards */
+  --color-white: #ffffff;
+  --color-muted: #8d98a2;
+
+  /* Type */
+  --font-display: "Meghana", "Lato", sans-serif;
+  --font-body: "Lato", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --fs-display: clamp(2rem, 1.2rem + 2.6vw, 3.3125rem);   /* 53px */
+  --fs-h2: clamp(1.625rem, 1.15rem + 1.6vw, 2.5rem);       /* 40px */
+  --fs-stat: clamp(2.5rem, 1.6rem + 2.8vw, 4rem);          /* 64px */
+  --fs-eyebrow: clamp(1.125rem, 0.95rem + 0.6vw, 1.5rem);  /* 24px */
+  --fs-lead: clamp(1.1875rem, 1rem + 0.6vw, 1.5rem);       /* 24px */
+  --fs-body: 1.0625rem;                                    /* 17px */
+  --fs-nav: 1rem;                                          /* 16px */
+  --fs-small: 0.875rem;                                    /* 14px */
+  --fs-xs: 0.8125rem;                                      /* 13px */
+
+  --lh-tight: 1.2;
+  --lh-heading: 1.3;
+  --lh-body: 1.4;
+
+  --tracking-display: 0.75px;
+  --tracking-card: 0.68px;
+
+  /* Layout */
+  --container-max: 1440px;
+  --gutter: 48px;
+  --header-h: 120px;
+  --section-y: clamp(56px, 4vw + 32px, 80px);
+  --grid-gap: 16px;
+
+  /* Shape & motion */
+  --radius-pill: 500px;
+  --radius-sm: 4px;
+  --shadow-dropbar: 0 18px 48px -33px rgba(0, 0, 0, 0.35);
+  --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --dur: 0.2s;
+}
+
+@media (max-width: 959px) {
+  :root {
+    --gutter: 32px;
+    --header-h: 88px;
+  }
+}
+
+@media (max-width: 639px) {
+  :root {
+    --gutter: 20px;
+    --header-h: 72px;
+  }
+}

@@ -1,0 +1,66 @@
+/* ==========================================================================
+   Page-specific layout
+   ========================================================================== */
+
+/* Home — "Il nostro modo di creare valore" */
+.intro .t-h2 {
+  max-width: 1120px;
+}
+
+.intro .t-lead {
+  margin-top: 24px;
+}
+
+/* Home — "Competenze specialistiche" */
+.competenze .t-h2 {
+  max-width: 672px;
+}
+
+.competenze .t-lead {
+  margin-top: 40px;
+}
+
+.competenze .btn {
+  margin-top: 40px;
+}
+
+.competenze .feature-list {
+  margin-top: clamp(0px, 9vw, 136px);
+}
+
+/* La Società */
+.experience .t-h2 + * {
+  margin-top: 32px;
+}
+
+/* Intro paragraphs on listing pages */
+.page-intro {
+  max-width: 1004px;
+}
+
+.page-intro--narrow {
+  max-width: 672px;
+}
+
+/* Detail pages: lead + body + square media */
+.detail-media {
+  position: sticky;
+  top: calc(var(--header-h) + 24px);
+}
+
+@media (max-width: 959px) {
+  .detail-media { position: static; max-width: 560px; }
+}
+
+/* Track record page header */
+.tr-head {
+  padding-block: 80px 56px;
+}
+
+.tr-head .t-eyebrow + .t-display {
+  margin-top: 16px;
+}
+
+.list-section {
+  padding-bottom: 48px;
+}

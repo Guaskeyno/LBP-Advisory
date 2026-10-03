@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Track Record — LB Advice</title>
+<meta name="description" content="Una vocazione all’eccellenza: le operazioni di M&amp;A, Debt Advisory e Project Finance seguite dal nostro team.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap">
+<link rel="preload" href="assets/fonts/Meghana.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+<script src="js/icons.js" defer></script>
+<script src="js/nav.js" defer></script>
+<script src="js/filters.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Vai al contenuto</a>
+
+<header class="site-header">
+  <div class="site-header__inner container">
+    <a class="logo" href="index.html" aria-label="LB Advice — Home">
+      <img src="assets/img/logo.svg" width="200" height="32" alt="LB Advice">
+    </a>
+
+    <nav class="main-nav" aria-label="Principale">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <button class="main-nav__link is-active" type="button" data-dropdown aria-expanded="false" aria-controls="dd-chi-siamo"><span class="label" data-label="Chi Siamo">Chi Siamo</span><span data-icon="chevron-down"></span></button>
+          <div class="dropdown" id="dd-chi-siamo">
+            <ul class="dropdown__nav">
+            <li><a href="la-societa.html">La Società</a></li>
+            <li><a href="professionisti.html">Professionisti</a></li>
+            <li><a href="track-record.html" class="is-active" aria-current="page">Track Record</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-nav__item"><a class="main-nav__link" href="aree-di-attivita.html"><span class="label" data-label="Aree di Attività">Aree di Attività</span></a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="mercati.html"><span class="label" data-label="Mercati">Mercati</span></a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="contatti.html"><span class="label" data-label="Contatti">Contatti</span></a></li>
+      </ul>
+
+      <button class="search-toggle" type="button" data-dropdown aria-expanded="false" aria-controls="search-drop" aria-label="Apri la ricerca"><span data-icon="search"></span></button>
+      <div class="dropdown search-drop" id="search-drop">
+        <form class="search-form" action="cerca.html" method="get" role="search">
+          <span data-icon="search"></span>
+          <input type="search" name="q" placeholder="Cerca" aria-label="Cerca nel sito" required>
+        </form>
+      </div>
+    </nav>
+
+    <button class="nav-toggle" type="button" aria-controls="offcanvas" aria-expanded="false" aria-label="Apri il menu"><span data-icon="menu"></span></button>
+  </div>
+  <div class="dropbar"></div>
+</header>
+
+<div class="offcanvas" id="offcanvas" aria-hidden="true">
+  <div class="offcanvas__overlay" data-offcanvas-close></div>
+  <div class="offcanvas__bar" role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="offcanvas__head">
+      <a class="logo" href="index.html" aria-label="LB Advice — Home"><img src="assets/img/logo.svg" width="200" height="32" alt="LB Advice"></a>
+      <button class="offcanvas__close" type="button" data-offcanvas-close aria-label="Chiudi il menu"><span data-icon="close" class="icon--lg"></span></button>
+    </div>
+    <nav aria-label="Principale (mobile)">
+      <ul class="offcanvas__nav">
+        <li>
+          <span>Chi Siamo</span>
+          <ul class="offcanvas__sub">
+            <li><a href="la-societa.html">La Società</a></li>
+            <li><a href="professionisti.html">Professionisti</a></li>
+            <li><a href="track-record.html" class="is-active" aria-current="page">Track Record</a></li>
+          </ul>
+        </li>
+        <li><a href="aree-di-attivita.html">Aree di Attività</a></li>
+        <li><a href="mercati.html">Mercati</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+    <div class="offcanvas__search">
+      <form class="search-form" action="cerca.html" method="get" role="search">
+        <span data-icon="search"></span>
+        <input type="search" name="q" placeholder="Cerca" aria-label="Cerca nel sito" required>
+      </form>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+<section class="tr-head">
+  <div class="container">
+    <p class="t-eyebrow">Track Record</p>
+    <h1 class="t-display">Una vocazione all’eccellenza</h1>
+  </div>
+</section>
+
+<div class="filters" role="search" aria-label="Filtra le operazioni">
+  <div class="container filters__inner">
+    <label class="filter">
+      <span class="filter__label">Mercati</span>
+      <span class="filter__control">
+        <select data-filter="mercati"><option value="">Tutti</option></select>
+        <span data-icon="chevron-down"></span>
+      </span>
+    </label>
+    <label class="filter">
+      <span class="filter__label">Area</span>
+      <span class="filter__control">
+        <select data-filter="area"><option value="">Tutte</option></select>
+        <span data-icon="chevron-down"></span>
+      </span>
+    </label>
+    <label class="filter">
+      <span class="filter__label">Anno</span>
+      <span class="filter__control">
+        <select data-filter="anno"><option value="">Tutti</option></select>
+        <span data-icon="chevron-down"></span>
+      </span>
+    </label>
+    <label class="filter">
+      <span class="filter__label">Ruolo</span>
+      <span class="filter__control">
+        <select data-filter="ruolo"><option value="">Tutti</option></select>
+        <span data-icon="chevron-down"></span>
+      </span>
+    </label>
+    <label class="filter">
+      <span class="filter__label">Tipologia</span>
+      <span class="filter__control">
+        <select data-filter="tipologia"><option value="">Tutte</option></select>
+        <span data-icon="chevron-down"></span>
+      </span>
+    </label>
+    <div class="filter-search">
+      <label class="visually-hidden" for="tr-search">Cerca per parola chiave</label>
+      <input id="tr-search" type="search" placeholder="Cerca per parola chiave" data-filter-search>
+      <span data-icon="search"></span>
+    </div>
+  </div>
+</div>
+
+<section class="list-section">
+  <div class="container">
+    <p class="results-count" aria-live="polite"><span data-filter-count data-noun="deals"></span></p>
+    <div class="grid-4" data-filter-list>
+<article class="card" data-filter-item data-mercati="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
+  <div class="card__logo ph ph--light ph--sm" role="img" aria-label="Logo cliente (segnaposto)"></div>
+  <div class="card__body">
+    <h3 class="card__title">Moncada Energy Group</h3>
+    <p class="card__text">Finanziamento di progetto pari a €41,2M per la realizzazione di un impianto solare da 77,3 MWp in Sicilia (consorzio BPM, BPER, SACE)</p>
+  </div>
+  <ul class="tags">
+    <li class="tag">Solar</li>
+    <li class="tag">Advisor for the borrower</li>
+    <li class="tag">Project Finance</li>
+  </ul>
+</article>
+<article class="card" data-filter-item data-mercati="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
+  <div class="card__logo ph ph--light ph--sm" role="img" aria-label="Logo cliente (segnaposto)"></div>
+  <div class="card__body">
+    <h3 class="card__title">ACEA SUN CAPITAL S.r.l.</h3>
+    <p class="card__text">Finanziamento di progetto pari a €41,2M per la realizzazione di un impianto solare da 77,3 MWp in Sicilia (consorzio BPM, BPER, SACE)</p>
+  </div>
+  <ul class="tags">
+    <li class="tag">Solar</li>
+    <li class="tag">Advisor for the borrower</li>
+    <li class="tag">Project Finance</li>
+  </ul>
+</article>
+<article class="card" data-filter-item data-mercati="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
+  <div class="card__logo ph ph--light ph--sm" role="img" aria-label="Logo cliente (segnaposto)"></div>
+  <div class="card__body">
+    <h3 class="card__title">Equitix Italia HoldCo 2 EFII S.r.l.</h3>
+    <p class="card__text">Finanziamento di progetto pari a €41,2M per la realizzazione di un impianto solare da 77,3 MWp in Sicilia (consorzio BPM, BPER, SACE)</p>
+  </div>
+  <ul class="tags">
+    <li class="tag">Solar</li>
+    <li class="tag">Advisor for the borrower</li>
+    <li class="tag">Project Finance</li>
+  </ul>
+</article>
+<article class="card" data-filter-item data-mercati="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
+  <div class="card__logo ph ph--light ph--sm" role="img" aria-label="Logo cliente (segnaposto)"></div>
+  <div class="card__body">
+    <h3 class="card__title">Solaris solutions</h3>
+    <p class="card__text">Advisor to the shareholders of Solarys IS, a company operating in the design, installation and management of PV plants, on the sale to: Everest</p>
+  </div>
+  <ul class="tags">
+    <li class="tag">Solar</li>
+    <li class="tag">Advisor for the borrower</li>
+    <li class="tag">Project Finance</li>
+  </ul>
+</article>
+<article class="card" data-filter-item data-mercati="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
+  <div class="card__logo ph ph--light ph--sm" role="img" aria-label="Logo cliente (segnaposto)"></div>
+  <div class="card__body">
+    <h3 class="card__title">Moncada Energy Group</h3>
+    <p class="card__text">Finanziamento di progetto pari a €41,2M per la realizzazione di un impianto solare da 77,3 MWp in Sicilia (consorzio BPM, BPER, SACE)</p>
+  </div>
+  <ul class="tags">
+    <li class="tag">Solar</li>
+    <li class="tag">Advisor for the borrower</li>
+    <li class="tag">Project Finance</li>
+  </ul>
+</article>
+<article class="card" data-filter-item data-mercati="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
+  <div class="card__logo ph ph--light ph--sm" role="img" aria-label="Logo cliente (segnaposto)"></div>
+  <div class="card__body">
+    <h3 class="card__title">ACEA SUN CAPITAL S.r.l.</h3>
+    <p class="card__text">Finanziamento di progetto pari a €41,2M per la realizzazione di un impianto solare da 77,3 MWp in Sicilia (consorzio BPM, BPER, SACE)</p>
+  </div>
+  <ul class="tags">
+    <li class="tag">Solar</li>
+    <li class="tag">Advisor for the borrower</li>
+    <li class="tag">Project Finance</li>
+  </ul>
+</article>
+<article class="card" data-filter-item data-mercati="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
+  <div class="card__logo ph ph--light ph--sm" role="img" aria-label="Logo cliente (segnaposto)"></div>
+  <div class="card__body">
+    <h3 class="card__title">Equitix Italia HoldCo 2 EFII S.r.l.</h3>
+    <p class="card__text">Finanziamento di progetto pari a €41,2M per la realizzazione di un impianto solare da 77,3 MWp in Sicilia (consorzio BPM, BPER, SACE)</p>
+  </div>
+  <ul class="tags">
+    <li class="tag">Solar</li>
+    <li class="tag">Advisor for the borrower</li>
+    <li class="tag">Project Finance</li>
+  </ul>
+</article>
+<article class="card" data-filter-item data-mercati="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
+  <div class="card__logo ph ph--light ph--sm" role="img" aria-label="Logo cliente (segnaposto)"></div>
+  <div class="card__body">
+    <h3 class="card__title">Solaris solutions</h3>
+    <p class="card__text">Advisor to the shareholders of Solarys IS, a company operating in the design, installation and management of PV plants, on the sale to: Everest</p>
+  </div>
+  <ul class="tags">
+    <li class="tag">Solar</li>
+    <li class="tag">Advisor for the borrower</li>
+    <li class="tag">Project Finance</li>
+  </ul>
+</article>
+<article class="card" data-filter-item data-mercati="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
+  <div class="card__logo ph ph--light ph--sm" role="img" aria-label="Logo cliente (segnaposto)"></div>
+  <div class="card__body">
+    <h3 class="card__title">Moncada Energy Group</h3>
+    <p class="card__text">Finanziamento di progetto pari a €41,2M per la realizzazione di un impianto solare da 77,3 MWp in Sicilia (consorzio BPM, BPER, SACE)</p>
+  </div>
+  <ul class="tags">
+    <li class="tag">Solar</li>
+    <li class="tag">Advisor for the borrower</li>
+    <li class="tag">Project Finance</li>
+  </ul>
+</article>
+<article class="card" data-filter-item data-mercati="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
+  <div class="card__logo ph ph--light ph--sm" role="img" aria-label="Logo cliente (segnaposto)"></div>
+  <div class="card__body">
+    <h3 class="card__title">ACEA SUN CAPITAL S.r.l.</h3>
+    <p class="card__text">Finanziamento di progetto pari a €41,2M per la realizzazione di un impianto solare da 77,3 MWp in Sicilia (consorzio BPM, BPER, SACE)</p>
+  </div>
+  <ul class="tags">
+    <li class="tag">Solar</li>
+    <li class="tag">Advisor for the borrower</li>
+    <li class="tag">Project Finance</li>
+  </ul>
+</article>
+<article class="card" data-filter-item data-mercati="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
+  <div class="card__logo ph ph--light ph--sm" role="img" aria-label="Logo cliente (segnaposto)"></div>
+  <div class="card__body">
+    <h3 class="card__title">Equitix Italia HoldCo 2 EFII S.r.l.</h3>
+    <p class="card__text">Finanziamento di progetto pari a €41,2M per la realizzazione di un impianto solare da 77,3 MWp in Sicilia (consorzio BPM, BPER, SACE)</p>
+  </div>
+  <ul class="tags">
+    <li class="tag">Solar</li>
+    <li class="tag">Advisor for the borrower</li>
+    <li class="tag">Project Finance</li>
+  </ul>
+</article>
+<article class="card" data-filter-item data-mercati="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
+  <div class="card__logo ph ph--light ph--sm" role="img" aria-label="Logo cliente (segnaposto)"></div>
+  <div class="card__body">
+    <h3 class="card__title">Solaris solutions</h3>
+    <p class="card__text">Advisor to the shareholders of Solarys IS, a company operating in the design, installation and management of PV plants, on the sale to: Everest</p>
+  </div>
+  <ul class="tags">
+    <li class="tag">Solar</li>
+    <li class="tag">Advisor for the borrower</li>
+    <li class="tag">Project Finance</li>
+  </ul>
+</article>
+    </div>
+    <p class="empty-state" data-filter-empty hidden>Nessuna operazione corrisponde ai filtri selezionati.</p>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__cols">
+      <address>
+        <p>L&amp;B Partners S.p.A.</p>
+        <p>P. IVA 06136280721</p>
+        <p class="gap">Via Turati, 6</p>
+        <p>20121 Milano</p>
+        <p class="gap"><a href="tel:+390289694011">+39 02 89694011</a></p>
+        <p><a href="mailto:segreteria@lbpartners.it">segreteria@lbpartners.it</a></p>
+        <p><a href="#" rel="noopener">LinkedIn</a></p>
+      </address>
+      <ul class="site-footer__legal">
+        <li><a href="#">Privacy &amp; Cookie Policy</a></li>
+        <li><a href="#">Codice Condotta</a></li>
+        <li><a href="#">Modello Organizzativo 231/01</a></li>
+      </ul>
+    </div>
+    <a class="site-footer__logo logo" href="index.html" aria-label="LB Advice — Home">
+      <img src="assets/img/logo-white.svg" width="200" height="32" alt="LB Advice">
+    </a>
+  </div>
+</footer>
+</body>
+</html>

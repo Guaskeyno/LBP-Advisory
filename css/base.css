@@ -1,0 +1,232 @@
+/* ==========================================================================
+   Base: reset, typography, layout primitives
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-h);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--color-white);
+  color: var(--color-primary);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.is-locked {
+  overflow: hidden;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+}
+
+p + p {
+  margin-top: 1.4em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-display);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.on-dark :focus-visible,
+.site-footer :focus-visible,
+.offcanvas :focus-visible {
+  outline-color: var(--color-white);
+}
+
+/* --- Typography helpers ------------------------------------------------ */
+
+.t-display {
+  font-size: var(--fs-display);
+  line-height: var(--lh-tight);
+}
+
+.t-h2 {
+  font-size: var(--fs-h2);
+  line-height: var(--lh-heading);
+}
+
+.t-eyebrow {
+  font-family: var(--font-display);
+  font-size: var(--fs-eyebrow);
+  line-height: var(--lh-heading);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-display);
+}
+
+.t-h3 {
+  font-size: var(--fs-body);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-card);
+}
+
+.t-lead {
+  font-size: var(--fs-lead);
+  line-height: var(--lh-body);
+}
+
+.t-subtitle {
+  font-size: var(--fs-lead);
+  font-weight: 700;
+  line-height: var(--lh-heading);
+}
+
+.t-small {
+  font-size: var(--fs-small);
+}
+
+/* --- Layout ------------------------------------------------------------ */
+
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.section {
+  padding-block: var(--section-y);
+}
+
+.section--main { background: var(--color-main); }
+.section--dark { background: var(--color-primary); color: var(--color-white); }
+
+.stack > * + * { margin-top: var(--stack-gap, 24px); }
+
+.split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px clamp(32px, 3vw, 48px);
+  align-items: start;
+}
+
+@media (max-width: 959px) {
+  .split { grid-template-columns: minmax(0, 1fr); }
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--grid-gap);
+}
+
+@media (max-width: 1199px) {
+  .grid-4 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 959px) {
+  .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 539px) {
+  .grid-4 { grid-template-columns: minmax(0, 1fr); }
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -100px;
+  z-index: 1000;
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  top: 16px;
+}
+
+/* --- Icons (UIkit icon set, injected by js/icons.js) -------------------- */
+
+.icon {
+  display: inline-flex;
+  flex: none;
+  width: 20px;
+  height: 20px;
+  line-height: 0;
+}
+
+.icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.icon--sm { width: 16px; height: 16px; }
+.icon--lg { width: 24px; height: 24px; }

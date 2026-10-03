@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nome Cognome — LB Advice</title>
+<meta name="description" content="Profilo professionista: Nome Cognome, Partner.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap">
+<link rel="preload" href="assets/fonts/Meghana.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+<script src="js/icons.js" defer></script>
+<script src="js/nav.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Vai al contenuto</a>
+
+<header class="site-header">
+  <div class="site-header__inner container">
+    <a class="logo" href="index.html" aria-label="LB Advice — Home">
+      <img src="assets/img/logo.svg" width="200" height="32" alt="LB Advice">
+    </a>
+
+    <nav class="main-nav" aria-label="Principale">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <button class="main-nav__link is-active" type="button" data-dropdown aria-expanded="false" aria-controls="dd-chi-siamo"><span class="label" data-label="Chi Siamo">Chi Siamo</span><span data-icon="chevron-down"></span></button>
+          <div class="dropdown" id="dd-chi-siamo">
+            <ul class="dropdown__nav">
+            <li><a href="la-societa.html">La Società</a></li>
+            <li><a href="professionisti.html" class="is-active" aria-current="page">Professionisti</a></li>
+            <li><a href="track-record.html">Track Record</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="main-nav__item"><a class="main-nav__link" href="aree-di-attivita.html"><span class="label" data-label="Aree di Attività">Aree di Attività</span></a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="mercati.html"><span class="label" data-label="Mercati">Mercati</span></a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="contatti.html"><span class="label" data-label="Contatti">Contatti</span></a></li>
+      </ul>
+
+      <button class="search-toggle" type="button" data-dropdown aria-expanded="false" aria-controls="search-drop" aria-label="Apri la ricerca"><span data-icon="search"></span></button>
+      <div class="dropdown search-drop" id="search-drop">
+        <form class="search-form" action="cerca.html" method="get" role="search">
+          <span data-icon="search"></span>
+          <input type="search" name="q" placeholder="Cerca" aria-label="Cerca nel sito" required>
+        </form>
+      </div>
+    </nav>
+
+    <button class="nav-toggle" type="button" aria-controls="offcanvas" aria-expanded="false" aria-label="Apri il menu"><span data-icon="menu"></span></button>
+  </div>
+  <div class="dropbar"></div>
+</header>
+
+<div class="offcanvas" id="offcanvas" aria-hidden="true">
+  <div class="offcanvas__overlay" data-offcanvas-close></div>
+  <div class="offcanvas__bar" role="dialog" aria-modal="true" aria-label="Menu">
+    <div class="offcanvas__head">
+      <a class="logo" href="index.html" aria-label="LB Advice — Home"><img src="assets/img/logo.svg" width="200" height="32" alt="LB Advice"></a>
+      <button class="offcanvas__close" type="button" data-offcanvas-close aria-label="Chiudi il menu"><span data-icon="close" class="icon--lg"></span></button>
+    </div>
+    <nav aria-label="Principale (mobile)">
+      <ul class="offcanvas__nav">
+        <li>
+          <span>Chi Siamo</span>
+          <ul class="offcanvas__sub">
+            <li><a href="la-societa.html">La Società</a></li>
+            <li><a href="professionisti.html" class="is-active" aria-current="page">Professionisti</a></li>
+            <li><a href="track-record.html">Track Record</a></li>
+          </ul>
+        </li>
+        <li><a href="aree-di-attivita.html">Aree di Attività</a></li>
+        <li><a href="mercati.html">Mercati</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
+    <div class="offcanvas__search">
+      <form class="search-form" action="cerca.html" method="get" role="search">
+        <span data-icon="search"></span>
+        <input type="search" name="q" placeholder="Cerca" aria-label="Cerca nel sito" required>
+      </form>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+<section class="profile-head">
+  <div class="container profile-head__grid">
+    <div>
+      <a class="back-link" href="professionisti.html"><span data-icon="arrow-left"></span>Tutti i professionisti</a>
+      <h1 class="profile-head__name">Nome<br>Cognome</h1>
+      <p class="profile-head__role">Partner</p>
+      <p>Proprietà Intellettuale, Trademark</p>
+      <div class="contact-grid">
+        <p class="contact-row"><span data-icon="location"></span>Milano</p>
+        <p class="contact-row"><span data-icon="receiver"></span><a href="tel:+390289694011">+39 02 89694011</a></p>
+        <p class="contact-row"><span data-icon="world"></span>Italiano, English</p>
+        <p class="contact-row"><span data-icon="mail"></span><a href="mailto:segreteria@lbpartners.it">segreteria@lbpartners.it</a></p>
+      </div>
+      <div class="profile-actions">
+        <a class="icon-btn" href="#" aria-label="Profilo LinkedIn"><span data-icon="linkedin"></span></a>
+        <a class="btn btn--sm" href="#"><span data-icon="download" class="icon--sm"></span>Scarica contatto</a>
+      </div>
+    </div>
+    <div class="ph ph--square" role="img" aria-label="Ritratto segnaposto"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container profile-body">
+    <div class="prose">
+      <p class="t-lead">Nome Cognome è alla guida dell’ufficio di Milano dal 2007. La nostra clientela si affida a lei per diritto intellettuale, patenti, trademark, e copyright. Lei è specializzata nel navigare complesse problematiche legate all’IP, lavorando con le autorità chiave sia in Italia che all’estero.</p>
+      <p style="margin-top: 24px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <blockquote class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</blockquote>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+      <div class="mentions">
+        <h2>Menzioni</h2>
+        <ul>
+        <li><a href="#"><span data-icon="link" class="icon--lg"></span><span><strong>Website Source</strong><span>website.it/url</span></span></a></li>
+        <li><a href="#"><span data-icon="link" class="icon--lg"></span><span><strong>Website Source</strong><span>website.it/url</span></span></a></li>
+        <li><a href="#"><span data-icon="link" class="icon--lg"></span><span><strong>Website Source</strong><span>website.it/url</span></span></a></li>
+        <li><a href="#"><span data-icon="link" class="icon--lg"></span><span><strong>Website Source</strong><span>website.it/url</span></span></a></li>
+        <li><a href="#"><span data-icon="link" class="icon--lg"></span><span><strong>Website Source</strong><span>website.it/url</span></span></a></li>
+        <li><a href="#"><span data-icon="link" class="icon--lg"></span><span><strong>Website Source</strong><span>website.it/url</span></span></a></li>
+        <li><a href="#"><span data-icon="link" class="icon--lg"></span><span><strong>Website Source</strong><span>website.it/url</span></span></a></li>
+        <li><a href="#"><span data-icon="link" class="icon--lg"></span><span><strong>Website Source</strong><span>website.it/url</span></span></a></li>
+        <li><a href="#"><span data-icon="link" class="icon--lg"></span><span><strong>Website Source</strong><span>website.it/url</span></span></a></li>
+        </ul>
+      </div>
+    </div>
+    <aside>
+      <div class="meta-block">
+        <h2>Attività</h2>
+        <ul class="tags tags--lg"><li class="tag">Nome Attività</li><li class="tag">Nome Attività</li></ul>
+      </div>
+      <div class="meta-block">
+        <h2>Mercati</h2>
+        <ul class="tags tags--lg"><li class="tag">Nome mercato</li><li class="tag">Nome mercato</li><li class="tag">Nome mercato</li><li class="tag">Nome mercato</li><li class="tag">Nome mercato</li></ul>
+      </div>
+    </aside>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__cols">
+      <address>
+        <p>L&amp;B Partners S.p.A.</p>
+        <p>P. IVA 06136280721</p>
+        <p class="gap">Via Turati, 6</p>
+        <p>20121 Milano</p>
+        <p class="gap"><a href="tel:+390289694011">+39 02 89694011</a></p>
+        <p><a href="mailto:segreteria@lbpartners.it">segreteria@lbpartners.it</a></p>
+        <p><a href="#" rel="noopener">LinkedIn</a></p>
+      </address>
+      <ul class="site-footer__legal">
+        <li><a href="#">Privacy &amp; Cookie Policy</a></li>
+        <li><a href="#">Codice Condotta</a></li>
+        <li><a href="#">Modello Organizzativo 231/01</a></li>
+      </ul>
+    </div>
+    <a class="site-footer__logo logo" href="index.html" aria-label="LB Advice — Home">
+      <img src="assets/img/logo-white.svg" width="200" height="32" alt="LB Advice">
+    </a>
+  </div>
+</footer>
+</body>
+</html>
