@@ -524,6 +524,17 @@
   color: var(--color-white);
 }
 
+/* Stays pinned under the sticky header while the list scrolls */
+.filters--sticky {
+  position: sticky;
+  top: var(--header-h);
+  z-index: 90;   /* below the header (100) so its dropdowns cover the bar */
+}
+
+.filters--sticky.is-stuck {
+  box-shadow: 0 12px 24px -16px rgba(0, 0, 0, 0.45);
+}
+
 .filters__inner {
   display: flex;
   flex-wrap: wrap;

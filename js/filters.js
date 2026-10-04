@@ -67,4 +67,17 @@
   }
 
   apply();
+
+  // Sticky bar: add a shadow once it is pinned under the header
+  var sticky = document.querySelector('.filters--sticky');
+  var header = document.querySelector('.site-header');
+  if (sticky && header) {
+    var onScroll = function () {
+      var stuck = sticky.getBoundingClientRect().top <= header.getBoundingClientRect().bottom + 0.5;
+      sticky.classList.toggle('is-stuck', stuck && window.scrollY > 0);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    onScroll();
+  }
 })();
