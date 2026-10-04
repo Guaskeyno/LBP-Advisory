@@ -30,20 +30,29 @@
     return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
   }
 
-  // Populate selects
+  // Populate selects. data-sort="dom" keeps the order values first appear in
+  // the list (e.g. seniority); otherwise options are sorted alphabetically.
+  // A filter with no values in the data is hidden until content gains them.
   selects.forEach(function (select) {
     var key = select.getAttribute('data-filter');
-    var seen = {};
+    var seen = [];
     items.forEach(function (item) {
-      values(item, key).forEach(function (v) { seen[v] = true; });
+      values(item, key).forEach(function (v) { if (seen.indexOf(v) === -1) seen.push(v); });
     });
-    Object.keys(seen).sort(function (a, b) { return a.localeCompare(b, 'it', { numeric: true }); })
-      .forEach(function (v) {
-        var opt = document.createElement('option');
-        opt.value = v;
-        opt.textContent = v;
-        select.appendChild(opt);
-      });
+    if (!seen.length) {
+      var wrap = select.closest('.filter');
+      if (wrap) wrap.hidden = true;
+      return;
+    }
+    if (select.getAttribute('data-sort') !== 'dom') {
+      seen.sort(function (a, b) { return a.localeCompare(b, 'it', { numeric: true }); });
+    }
+    seen.forEach(function (v) {
+      var opt = document.createElement('option');
+      opt.value = v;
+      opt.textContent = v;
+      select.appendChild(opt);
+    });
     select.addEventListener('change', apply);
   });
 

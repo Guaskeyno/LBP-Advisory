@@ -9,14 +9,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap">
 <link rel="preload" href="assets/fonts/Meghana.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="css/tokens.css?v=466d83f3">
-<link rel="stylesheet" href="css/base.css?v=466d83f3">
-<link rel="stylesheet" href="css/header.css?v=466d83f3">
-<link rel="stylesheet" href="css/components.css?v=466d83f3">
-<link rel="stylesheet" href="css/pages.css?v=466d83f3">
-<script src="js/icons.js?v=466d83f3" defer></script>
-<script src="js/nav.js?v=466d83f3" defer></script>
-<script src="js/filters.js?v=466d83f3" defer></script>
+<link rel="stylesheet" href="css/tokens.css?v=58d7011c">
+<link rel="stylesheet" href="css/base.css?v=58d7011c">
+<link rel="stylesheet" href="css/header.css?v=58d7011c">
+<link rel="stylesheet" href="css/components.css?v=58d7011c">
+<link rel="stylesheet" href="css/pages.css?v=58d7011c">
+<script src="js/icons.js?v=58d7011c" defer></script>
+<script src="js/nav.js?v=58d7011c" defer></script>
+<script src="js/filters.js?v=58d7011c" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Vai al contenuto</a>
@@ -111,7 +111,7 @@
     <label class="filter">
       <span class="filter__label">Ruolo</span>
       <span class="filter__control">
-        <select data-filter="ruolo"><option value="">Tutti</option></select>
+        <select data-filter="ruolo" data-sort="dom"><option value="">Tutti</option></select>
         <span data-icon="chevron-down"></span>
       </span>
     </label>
@@ -137,65 +137,120 @@
   <div class="container">
     <p class="visually-hidden" aria-live="polite"><span data-filter-count data-noun="professionisti"></span></p>
     <div class="grid-4" data-filter-list>
-      <a class="person" href="professionista.html" data-filter-item data-ruolo="" data-attivita="" data-mercati="">
+      <a class="person" href="professionista-gianguido-arcangeli.html" data-filter-item data-ruolo="Partner" data-attivita="" data-mercati="">
         <span class="ph" aria-hidden="true"></span>
-        <span class="person__name">Nome</span>
-        <span class="person__role">Titolo</span>
+        <span class="person__name">Gianguido Arcangeli</span>
+        <span class="person__role">Partner</span>
       </a>
-      <a class="person" href="professionista.html" data-filter-item data-ruolo="" data-attivita="" data-mercati="">
+      <a class="person" href="professionista-rocco-giorgio.html" data-filter-item data-ruolo="Partner" data-attivita="" data-mercati="">
         <span class="ph" aria-hidden="true"></span>
-        <span class="person__name">Nome</span>
-        <span class="person__role">Titolo</span>
+        <span class="person__name">Rocco Giorgio</span>
+        <span class="person__role">Partner</span>
       </a>
-      <a class="person" href="professionista.html" data-filter-item data-ruolo="" data-attivita="" data-mercati="">
+      <a class="person" href="professionista-paola-pellegrini.html" data-filter-item data-ruolo="Partner" data-attivita="" data-mercati="">
         <span class="ph" aria-hidden="true"></span>
-        <span class="person__name">Nome</span>
-        <span class="person__role">Titolo</span>
+        <span class="person__name">Paola Pellegrini</span>
+        <span class="person__role">Partner</span>
       </a>
-      <a class="person" href="professionista.html" data-filter-item data-ruolo="" data-attivita="" data-mercati="">
+      <a class="person" href="professionista-serena-quaranta.html" data-filter-item data-ruolo="Partner" data-attivita="" data-mercati="">
         <span class="ph" aria-hidden="true"></span>
-        <span class="person__name">Nome</span>
-        <span class="person__role">Titolo</span>
+        <span class="person__name">Serena Quaranta</span>
+        <span class="person__role">Partner</span>
       </a>
-      <a class="person" href="professionista.html" data-filter-item data-ruolo="" data-attivita="" data-mercati="">
+      <a class="person" href="professionista-marcello-rizzo.html" data-filter-item data-ruolo="Partner" data-attivita="" data-mercati="">
         <span class="ph" aria-hidden="true"></span>
-        <span class="person__name">Nome</span>
-        <span class="person__role">Titolo</span>
+        <span class="person__name">Marcello Rizzo</span>
+        <span class="person__role">Partner</span>
       </a>
-      <a class="person" href="professionista.html" data-filter-item data-ruolo="" data-attivita="" data-mercati="">
+      <a class="person" href="professionista-stefano-galbusera.html" data-filter-item data-ruolo="Managing Director" data-attivita="" data-mercati="">
         <span class="ph" aria-hidden="true"></span>
-        <span class="person__name">Nome</span>
-        <span class="person__role">Titolo</span>
+        <span class="person__name">Stefano Galbusera</span>
+        <span class="person__role">Managing Director</span>
       </a>
-      <a class="person" href="professionista.html" data-filter-item data-ruolo="" data-attivita="" data-mercati="">
+      <a class="person" href="professionista-andrea-davide-davanzo.html" data-filter-item data-ruolo="Director" data-attivita="" data-mercati="">
         <span class="ph" aria-hidden="true"></span>
-        <span class="person__name">Nome</span>
-        <span class="person__role">Titolo</span>
+        <span class="person__name">Andrea Davide D&#x27;Avanzo</span>
+        <span class="person__role">Director</span>
       </a>
-      <a class="person" href="professionista.html" data-filter-item data-ruolo="" data-attivita="" data-mercati="">
+      <a class="person" href="professionista-domenico-magistri.html" data-filter-item data-ruolo="Director" data-attivita="" data-mercati="">
         <span class="ph" aria-hidden="true"></span>
-        <span class="person__name">Nome</span>
-        <span class="person__role">Titolo</span>
+        <span class="person__name">Domenico Magistri</span>
+        <span class="person__role">Director</span>
       </a>
-      <a class="person" href="professionista.html" data-filter-item data-ruolo="" data-attivita="" data-mercati="">
+      <a class="person" href="professionista-luca-marniga.html" data-filter-item data-ruolo="Director" data-attivita="" data-mercati="">
         <span class="ph" aria-hidden="true"></span>
-        <span class="person__name">Nome</span>
-        <span class="person__role">Titolo</span>
+        <span class="person__name">Luca Marniga</span>
+        <span class="person__role">Director</span>
       </a>
-      <a class="person" href="professionista.html" data-filter-item data-ruolo="" data-attivita="" data-mercati="">
+      <a class="person" href="professionista-carlo-felice-balduzzi.html" data-filter-item data-ruolo="Vice President" data-attivita="" data-mercati="">
         <span class="ph" aria-hidden="true"></span>
-        <span class="person__name">Nome</span>
-        <span class="person__role">Titolo</span>
+        <span class="person__name">Carlo Felice Balduzzi</span>
+        <span class="person__role">Vice President</span>
       </a>
-      <a class="person" href="professionista.html" data-filter-item data-ruolo="" data-attivita="" data-mercati="">
+      <a class="person" href="professionista-antonio-paternostro.html" data-filter-item data-ruolo="Vice President" data-attivita="" data-mercati="">
         <span class="ph" aria-hidden="true"></span>
-        <span class="person__name">Nome</span>
-        <span class="person__role">Titolo</span>
+        <span class="person__name">Antonio Paternostro</span>
+        <span class="person__role">Vice President</span>
       </a>
-      <a class="person" href="professionista.html" data-filter-item data-ruolo="" data-attivita="" data-mercati="">
+      <a class="person" href="professionista-matilde-fassio.html" data-filter-item data-ruolo="Associate" data-attivita="" data-mercati="">
         <span class="ph" aria-hidden="true"></span>
-        <span class="person__name">Nome</span>
-        <span class="person__role">Titolo</span>
+        <span class="person__name">Matilde Fassio</span>
+        <span class="person__role">Associate</span>
+      </a>
+      <a class="person" href="professionista-francesco-mariani.html" data-filter-item data-ruolo="Associate" data-attivita="" data-mercati="">
+        <span class="ph" aria-hidden="true"></span>
+        <span class="person__name">Francesco Mariani</span>
+        <span class="person__role">Associate</span>
+      </a>
+      <a class="person" href="professionista-sandro-ravera-chion.html" data-filter-item data-ruolo="Associate" data-attivita="" data-mercati="">
+        <span class="ph" aria-hidden="true"></span>
+        <span class="person__name">Sandro Ravera Chion</span>
+        <span class="person__role">Associate</span>
+      </a>
+      <a class="person" href="professionista-giacomo-grimaldi.html" data-filter-item data-ruolo="Analyst" data-attivita="" data-mercati="">
+        <span class="ph" aria-hidden="true"></span>
+        <span class="person__name">Giacomo Grimaldi</span>
+        <span class="person__role">Analyst</span>
+      </a>
+      <a class="person" href="professionista-claudio-lleshi.html" data-filter-item data-ruolo="Analyst" data-attivita="" data-mercati="">
+        <span class="ph" aria-hidden="true"></span>
+        <span class="person__name">Claudio Lleshi</span>
+        <span class="person__role">Analyst</span>
+      </a>
+      <a class="person" href="professionista-stefano-lombardi.html" data-filter-item data-ruolo="Analyst" data-attivita="" data-mercati="">
+        <span class="ph" aria-hidden="true"></span>
+        <span class="person__name">Stefano Lombardi</span>
+        <span class="person__role">Analyst</span>
+      </a>
+      <a class="person" href="professionista-matteo-montini.html" data-filter-item data-ruolo="Analyst" data-attivita="" data-mercati="">
+        <span class="ph" aria-hidden="true"></span>
+        <span class="person__name">Matteo Montini</span>
+        <span class="person__role">Analyst</span>
+      </a>
+      <a class="person" href="professionista-pietro-munari.html" data-filter-item data-ruolo="Analyst" data-attivita="" data-mercati="">
+        <span class="ph" aria-hidden="true"></span>
+        <span class="person__name">Pietro Munari</span>
+        <span class="person__role">Analyst</span>
+      </a>
+      <a class="person" href="professionista-roberto-santangelo.html" data-filter-item data-ruolo="Analyst" data-attivita="" data-mercati="">
+        <span class="ph" aria-hidden="true"></span>
+        <span class="person__name">Roberto Santangelo</span>
+        <span class="person__role">Analyst</span>
+      </a>
+      <a class="person" href="professionista-francesco-antonio-schiavariello.html" data-filter-item data-ruolo="Analyst" data-attivita="" data-mercati="">
+        <span class="ph" aria-hidden="true"></span>
+        <span class="person__name">Francesco Antonio Schiavariello</span>
+        <span class="person__role">Analyst</span>
+      </a>
+      <a class="person" href="professionista-giorgio-servadio.html" data-filter-item data-ruolo="Analyst" data-attivita="" data-mercati="">
+        <span class="ph" aria-hidden="true"></span>
+        <span class="person__name">Giorgio Servadio</span>
+        <span class="person__role">Analyst</span>
+      </a>
+      <a class="person" href="professionista-marco-toffenetti.html" data-filter-item data-ruolo="Analyst" data-attivita="" data-mercati="">
+        <span class="ph" aria-hidden="true"></span>
+        <span class="person__name">Marco Toffenetti</span>
+        <span class="person__role">Analyst</span>
       </a>
     </div>
     <p class="empty-state" data-filter-empty hidden>Nessun professionista corrisponde ai filtri selezionati.</p>

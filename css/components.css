@@ -825,6 +825,29 @@
   margin-top: 48px;
 }
 
+.meta-text p + p {
+  margin-top: 12px;
+}
+
+/* Imported biographies: restore list bullets reset in base.css */
+.profile-bio > h2 {
+  margin-bottom: 24px;
+}
+
+.profile-bio ul {
+  margin: 1.4em 0;
+  padding-left: 1.25em;
+  list-style: disc;
+}
+
+.profile-bio li + li {
+  margin-top: 8px;
+}
+
+.profile-bio li::marker {
+  color: var(--color-primary);
+}
+
 .meta-block h2 {
   margin-bottom: 12px;
   font-size: var(--fs-body);
