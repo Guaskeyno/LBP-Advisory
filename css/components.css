@@ -419,10 +419,21 @@
   position: relative;
 }
 
+.person {
+  container-type: inline-size;
+}
+
+/* Name on line 1, surname on line 2, never wrapping further: the size
+   follows the card width (capped at the eyebrow size) so long names fit */
 .person__name {
   font-family: var(--font-display);
-  font-size: var(--fs-eyebrow);
+  font-size: min(var(--fs-eyebrow), 8.4cqi);
   line-height: var(--lh-heading);
+}
+
+.person__name > span {
+  display: block;
+  white-space: nowrap;
 }
 
 .person__role {
