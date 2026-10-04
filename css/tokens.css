@@ -20,6 +20,7 @@
   --color-main-shade: #d3d2cf;    /* darker shade of main, used for placeholders */
   --color-primary: #193448;       /* reference navy: text, buttons, dark sections */
   --color-primary-alt: #192848;   /* reference button gradient midpoint */
+  --color-primary-deep: #162f40;  /* reference text-selection background */
   --color-surface: #f2f2f2;       /* cards */
   --color-white: #ffffff;
   --color-muted: #8d98a2;

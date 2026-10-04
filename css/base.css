@@ -34,6 +34,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+::selection {
+  background: var(--color-primary-deep);
+  color: var(--color-main);
+  text-shadow: none;
+}
+
 body.is-locked {
   overflow: hidden;
 }
