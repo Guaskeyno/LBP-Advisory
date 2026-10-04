@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sedi e Contatti — LB Advice</title>
+<title>Contatti — LB Advice</title>
 <meta name="description" content="Tutti i riferimenti utili per entrare in contatto con noi in modo semplice e diretto.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap">
 <link rel="preload" href="assets/fonts/Meghana.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="css/tokens.css?v=25fb5692">
-<link rel="stylesheet" href="css/base.css?v=25fb5692">
-<link rel="stylesheet" href="css/header.css?v=25fb5692">
-<link rel="stylesheet" href="css/components.css?v=25fb5692">
-<link rel="stylesheet" href="css/pages.css?v=25fb5692">
-<script src="js/icons.js?v=25fb5692" defer></script>
-<script src="js/nav.js?v=25fb5692" defer></script>
+<link rel="stylesheet" href="css/tokens.css?v=610163de">
+<link rel="stylesheet" href="css/base.css?v=610163de">
+<link rel="stylesheet" href="css/header.css?v=610163de">
+<link rel="stylesheet" href="css/components.css?v=610163de">
+<link rel="stylesheet" href="css/pages.css?v=610163de">
+<script src="js/icons.js?v=610163de" defer></script>
+<script src="js/nav.js?v=610163de" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Vai al contenuto</a>
@@ -93,32 +93,49 @@
 </div>
 <section class="page-band">
   <div class="container">
-    <h1 class="t-display">Sedi e Contatti</h1>
-    <p class="t-subtitle">Tutti i riferimenti utili per entrare in contatto con noi in modo semplice e diretto</p>
+    <h1 class="t-display">Contatti</h1>
+    <p class="t-subtitle">Tutti i riferimenti utili per entrare in contatto con noi in modo semplice e diretto.</p>
   </div>
 </section>
 
-<section class="section" style="padding-top: 48px">
+<section class="section" aria-label="Sedi">
+  <div class="container contact-cols">
+      <div class="contact-col">
+        <h2 class="column-title">Sede di Milano</h2>
+        <dl class="contact-dl">
+          <dt>Uffici:</dt>
+          <dd>Via Turati, 6 – 20121 Milano<br>Tel. <a href="tel:+390289694011">+39 02 89694011</a><br>Tel. <a href="tel:+390289694012">+39 02 89694012</a></dd>
+        </dl>
+        <div class="map">
+          <iframe src="https://www.google.com/maps?q=Via+Turati%2C+6%2C+20121+Milano%2C+Italia&output=embed" title="Mappa: Via Turati, 6, 20121 Milano" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="contact-col">
+        <h2 class="column-title">Sede di Trani</h2>
+        <dl class="contact-dl">
+          <dt>Uffici:</dt>
+          <dd>Via Montegrappa, 18 – 76125 Trani<br>Tel. <a href="tel:+390883492630">+39 0883 492630</a><br>Tel. <a href="tel:+390883502512">+39 0883 502512</a></dd>
+        </dl>
+        <div class="map">
+          <iframe src="https://www.google.com/maps?q=Via+Montegrappa%2C+18%2C+76125+Trani%2C+Italia&output=embed" title="Mappa: Via Montegrappa, 18, 76125 Trani" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="contact-col">
+        <h2 class="column-title">Staff</h2>
+        <dl class="contact-dl">
+          <dt>Segreteria:</dt>
+          <dd><a href="mailto:segreteria@lbpartners.it">segreteria@lbpartners.it</a></dd>
+        </dl>
+      </div>
+  </div>
+</section>
+
+<section class="section section--muted" aria-labelledby="dati-societari">
   <div class="container">
-    <div class="offices">
-      <article class="office">
-        <div class="ph" role="img" aria-label="Immagine sede di Milano (segnaposto)"></div>
-        <div class="office__card">
-          <h2 class="office__city">Milano</h2>
-          <p>Via Turati, 6<br>20121 Milano</p>
-          <p><a href="tel:+390289694011">T +39 02 89694011</a><br><a href="tel:+390289694012">T +39 02 89694012</a></p>
-          <p><a href="mailto:segreteria@lbpartners.it">segreteria@lbpartners.it</a></p>
-        </div>
-      </article>
-      <article class="office">
-        <div class="ph" role="img" aria-label="Immagine sede di Trani (segnaposto)"></div>
-        <div class="office__card">
-          <h2 class="office__city">Trani</h2>
-          <p>Via Montegrappa, 18<br>76125 Trani</p>
-          <p><a href="tel:+390883492630">T +39 0883 492630</a><br><a href="tel:+390883502512">T +39 0883 502512</a></p>
-          <p><a href="mailto:segreteria@lbpartners.it">segreteria@lbpartners.it</a></p>
-        </div>
-      </article>
+    <h2 class="t-h2" id="dati-societari">Dati societari</h2>
+    <div class="company-data">
+      <p><strong>L&amp;B Partners S.p.A.</strong></p>
+      <p>Sede:<br>Via Turati, 6 – 20121 Milano<br>Tel. <a href="tel:+390289694011">+39 02 89694011</a><br>E-mail <a href="mailto:segreteria@lbpartners.it">segreteria@lbpartners.it</a><br>P. IVA 06136280721</p>
     </div>
   </div>
 </section>
@@ -138,7 +155,8 @@
         <li><a href="tel:+390289694011">+39 02 89694011</a></li>
         <li><a href="mailto:segreteria@lbpartners.it">segreteria@lbpartners.it</a></li>
         <li class="list-inline__break" aria-hidden="true"></li>
-        <li><a href="contatti.html">Sedi e Contatti</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+        <li><a href="contatti.html#dati-societari">Dati societari</a></li>
       </ul>
       <ul class="list-inline list-inline--legal">
         <li><a href="#">Privacy &amp; Cookie Policy</a></li>
