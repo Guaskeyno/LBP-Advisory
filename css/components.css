@@ -543,6 +543,54 @@
   padding-block: 16px;
 }
 
+.filters__group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px clamp(24px, 3.4vw, 56px);
+}
+
+/* Compact sticky bar on small screens: one swipeable row of filters,
+   search on its own full-width row */
+@media (max-width: 959px) {
+  .filters--sticky .filters__inner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding-block: 12px;
+  }
+
+  .filters--sticky .filters__group {
+    /* full-bleed row, exactly as wide as the screen; extra filters scroll */
+    width: calc(100% + 2 * var(--gutter));
+    min-width: 0;
+    flex-wrap: nowrap;
+    gap: 32px;
+    margin-inline: calc(-1 * var(--gutter));
+    padding-inline: var(--gutter);
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    /* fade on the right edge hints that the row can be swiped */
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 48px), transparent);
+    mask-image: linear-gradient(to right, #000 calc(100% - 48px), transparent);
+  }
+
+  .filters--sticky .filters__group::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filters--sticky .filter {
+    flex: none;
+  }
+
+  .filters--sticky .filter-search {
+    flex: none;
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+  }
+}
+
 .filter {
   display: grid;
   gap: 0;
