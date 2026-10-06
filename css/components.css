@@ -126,13 +126,10 @@
 
 /* --- Hero + page band --------------------------------------------------- */
 
+/* One hero height site-wide (landing reference: 553px at 1440px wide) */
 .hero {
   position: relative;
   height: clamp(260px, 38.4vw, 553px);
-}
-
-.hero--short {
-  height: clamp(220px, 26.7vw, 384px);
 }
 
 .page-band {
