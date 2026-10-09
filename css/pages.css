@@ -177,21 +177,11 @@
   margin-top: 20px;
 }
 
-/* Portrait: square image with the reference's vertical bar on the left */
+/* Portrait: square image (the grey bar is part of the image file) */
 .kp-photo {
   width: min(300px, 100%);
   aspect-ratio: 1 / 1;
   margin-bottom: 20px;
-}
-
-.kp-photo::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 48px;
-  background: var(--color-muted);
 }
 
 .kp-name {
