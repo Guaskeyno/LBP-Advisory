@@ -146,3 +146,94 @@
   margin-top: 32px;
   line-height: 1.65;
 }
+
+/* La Società — Key People (lifted from lbcapitalsgr.it/chi-siamo/#keypeople) */
+.kp-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 64px 70px;
+  align-items: start;
+}
+
+@media (max-width: 959px) {
+  .kp-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 56px 40px; }
+  .kp-intro { grid-column: 1 / -1; }
+}
+
+@media (max-width: 639px) {
+  .kp-grid { grid-template-columns: minmax(0, 1fr); }
+}
+
+.kp-intro .t-h2 {
+  margin-bottom: 20px;
+}
+
+.kp-intro p {
+  font-size: 1rem;
+  line-height: 28px;
+}
+
+.kp-intro p + p {
+  margin-top: 20px;
+}
+
+/* Portrait: square image with the reference's vertical bar on the left */
+.kp-photo {
+  width: min(300px, 100%);
+  aspect-ratio: 1 / 1;
+  margin-bottom: 20px;
+}
+
+.kp-photo::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 48px;
+  background: var(--color-muted);
+}
+
+.kp-name {
+  font-family: var(--font-body);
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.kp-card hr {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid var(--color-primary);
+}
+
+.kp-role,
+.kp-desc p {
+  font-size: 1rem;
+  line-height: 32px;
+}
+
+.kp-desc p + p {
+  margin-top: 0;
+}
+
+.kp-linkedin {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-top: 10px;
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-pill);
+  background: var(--color-primary);
+  color: var(--color-main);
+  transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+
+.kp-linkedin:hover {
+  background: transparent;
+  color: var(--color-primary);
+}
