@@ -166,7 +166,7 @@ window.LBA_SEARCH_INDEX = [
     "title": "Aree di Attività",
     "url": "aree-di-attivita.html",
     "excerpt": "Competenze specialistiche che si adattano perfettamente alle specificità di ogni operazione.",
-    "text": "Aree di Attività Competenze specialistiche che si adattano perfettamente alle specificità di ogni operazione Tre aree di attività specializzate, un approccio integrato. La profonda conoscenza del settore energetico e infrastrutturale ci permette di fornire un supporto completo e su misura in ogni fase dell'operazione, dall'analisi strategica alla chiusura. Fusioni & Acquisizioni (M&A) Consulenza finanziaria strategica per l’intero ciclo di vita di un’operazione: dall’identificazione degli obiettivi alla due diligence, dalla negoziazione al closing Debt Advisory & Project Finance Strutturazione della finanza di progetto per sponsor e finanziatori, dal modello economico-finanziario al term-sheet, dalla due diligence alla documentazione Crisi d’Impresa Analisi delle cause di crisi, elaborazione di piani di risanamento industriali ed economico-finanziari, assistenza nella ristrutturazione del debito e nei rapporti con i creditori"
+    "text": "Aree di Attività Competenze specialistiche che si adattano perfettamente alle specificità di ogni operazione Tre aree di attività specializzate, un approccio integrato. La profonda conoscenza del settore energetico e infrastrutturale ci permette di fornire un supporto completo e su misura in ogni fase dell'operazione, dall'analisi strategica alla chiusura. Fusioni & Acquisizioni (M&A) Consulenza finanziaria strategica per l’intero ciclo di vita di un’operazione: dall’identificazione degli obiettivi alla due diligence, dalla negoziazione al closing > Debt Advisory & Project Finance Strutturazione della finanza di progetto per sponsor e finanziatori, dal modello economico-finanziario al term-sheet, dalla due diligence alla documentazione > Crisi d’Impresa Analisi delle cause di crisi, elaborazione di piani di risanamento industriali ed economico-finanziari, assistenza nella ristrutturazione del debito e nei rapporti con i creditori >"
   },
   {
     "title": "Fusioni e Acquisizioni (M&A)",
@@ -190,7 +190,7 @@ window.LBA_SEARCH_INDEX = [
     "title": "Mercati",
     "url": "mercati.html",
     "excerpt": "I mercati in cui operiamo.",
-    "text": "Mercati Energia ed Infrastrutture Con una comprovata esperienza pluriennale nel settore dell'energia e delle infrastrutture, il nostro studio è riconosciuto continuativamente in numerosi dei più prestigiosi ranking italiani e internazionali."
+    "text": "Mercati Energia ed Infrastrutture Con una comprovata esperienza pluriennale nel settore dell'energia e delle infrastrutture, il nostro studio è riconosciuto continuativamente in numerosi dei più prestigiosi ranking italiani e internazionali. >"
   },
   {
     "title": "Energia ed Infrastrutture",
