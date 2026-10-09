@@ -178,13 +178,13 @@ window.LBA_SEARCH_INDEX = [
     "title": "Debt Advisory & Project Finance",
     "url": "attivita-debt-advisory-project-finance.html",
     "excerpt": "Strutturazione della finanza di progetto per sponsor e finanziatori, dal modello economico-finanziario al term-sheet, dalla due diligence alla documentazione",
-    "text": "Tutte le attività Debt Advisory & Project Finance Strutturazione della finanza di progetto per sponsor e finanziatori, dal modello economico-finanziario al term-sheet, dalla due diligence alla documentazione. Contattaci"
+    "text": "Tutte le attività Debt Advisory & Project Finance Strutturazione della finanza di progetto per sponsor e finanziatori, dal modello economico-finanziario al term-sheet, dalla due diligence alla documentazione."
   },
   {
     "title": "Crisi d’Impresa",
     "url": "attivita-crisi-impresa.html",
     "excerpt": "Analisi delle cause di crisi, elaborazione di piani di risanamento industriali ed economico-finanziari, assistenza nella ristrutturazione del debito e nei rapporti con i creditori",
-    "text": "Tutte le attività Crisi d’Impresa Analisi delle cause di crisi, elaborazione di piani di risanamento industriali ed economico-finanziari, assistenza nella ristrutturazione del debito e nei rapporti con i creditori. Contattaci"
+    "text": "Tutte le attività Crisi d’Impresa Analisi delle cause di crisi, elaborazione di piani di risanamento industriali ed economico-finanziari, assistenza nella ristrutturazione del debito e nei rapporti con i creditori."
   },
   {
     "title": "Industry",
@@ -202,6 +202,6 @@ window.LBA_SEARCH_INDEX = [
     "title": "Contatti",
     "url": "contatti.html",
     "excerpt": "Tutti i riferimenti utili per entrare in contatto con noi in modo semplice e diretto.",
-    "text": "Contatti Tutti i riferimenti utili per entrare in contatto con noi in modo semplice e diretto. Sede di Milano Uffici: Via Turati, 6 – 20121 Milano Tel. +39 02 89694011 Tel. +39 02 89694012 Sede di Trani Uffici: Via Montegrappa, 18 – 76125 Trani Tel. +39 0883 492630 Tel. +39 0883 502512 Staff Segreteria: segreteria@lbpartners.it Dati societari L&B Partners S.p.A. Sede: Via Turati, 6 – 20121 Milano Tel. +39 02 89694011 E-mail segreteria@lbpartners.it P. IVA 06136280721"
+    "text": "Contatti Tutti i riferimenti utili per entrare in contatto con noi in modo semplice e diretto. Sede di Milano Uffici: Via Turati, 6 – 20121 Milano Tel. +39 02 89694011 Tel. +39 02 89694012 Staff Segreteria: segreteria@lbpartners.it Dati societari L&B Partners S.p.A. Sede: Via Turati, 6 – 20121 Milano Tel. +39 02 89694011 E-mail segreteria@lbpartners.it P. IVA 06136280721"
   }
 ];

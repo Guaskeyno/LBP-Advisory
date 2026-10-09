@@ -42,16 +42,6 @@
   max-width: 672px;
 }
 
-/* Detail pages: lead + body + square media */
-.detail-media {
-  position: sticky;
-  top: calc(var(--header-h) + 24px);
-}
-
-@media (max-width: 959px) {
-  .detail-media { position: static; max-width: 560px; }
-}
-
 /* Track record page header */
 .tr-head {
   padding-block: 80px 56px;
@@ -72,7 +62,7 @@
 
 .contact-cols {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 3fr)) minmax(0, 2fr);
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
   gap: 40px;
   align-items: start;
 }
