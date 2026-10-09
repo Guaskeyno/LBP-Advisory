@@ -1158,3 +1158,9 @@
 .site-footer__brand .site-footer__vat {
   margin-top: 8px;
 }
+
+/* When a page ends on a navy section, separate it from the navy footer
+   with the reference's faint white rule */
+main:has(> .section--dark:last-child) + .site-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}

@@ -9,14 +9,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap">
 <link rel="preload" href="assets/fonts/Meghana.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="css/tokens.css?v=2ed887e5">
-<link rel="stylesheet" href="css/base.css?v=2ed887e5">
-<link rel="stylesheet" href="css/header.css?v=2ed887e5">
-<link rel="stylesheet" href="css/components.css?v=2ed887e5">
-<link rel="stylesheet" href="css/pages.css?v=2ed887e5">
-<script src="js/icons.js?v=2ed887e5" defer></script>
-<script src="js/nav.js?v=2ed887e5" defer></script>
-<script src="js/slider.js?v=2ed887e5" defer></script>
+<link rel="stylesheet" href="css/tokens.css?v=1bcf24d9">
+<link rel="stylesheet" href="css/base.css?v=1bcf24d9">
+<link rel="stylesheet" href="css/header.css?v=1bcf24d9">
+<link rel="stylesheet" href="css/components.css?v=1bcf24d9">
+<link rel="stylesheet" href="css/pages.css?v=1bcf24d9">
+<script src="js/icons.js?v=1bcf24d9" defer></script>
+<script src="js/nav.js?v=1bcf24d9" defer></script>
+<script src="js/slider.js?v=1bcf24d9" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Vai al contenuto</a>
@@ -111,10 +111,50 @@
   </div>
 </section>
 
+
+<section class="section" aria-labelledby="storia-title">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="t-h2" id="storia-title">La nostra storia</h2>
+    </div>
+  </div>
+  <div class="container">
+    <div class="timeline">
+      <div class="deco-bars deco-bars--wall" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="slider" id="storia-slider" data-slider>
+        <div class="slider__track" tabindex="0" aria-label="Tappe della nostra storia">
+        <article class="timeline__item">
+          <div class="timeline__media ph ph--sm" role="img" aria-label="Immagine segnaposto"></div>
+          <h3 class="timeline__year">2006</h3>
+          <p class="timeline__text">Debt advisory, chiusura del primo project finance.</p>
+        </article>
+        <article class="timeline__item">
+          <div class="timeline__media ph ph--sm" role="img" aria-label="Immagine segnaposto"></div>
+          <h3 class="timeline__year">2020</h3>
+          <p class="timeline__text">Ingresso di L&amp;B Partners S.p.A. nel Gruppo Bancario Ifigest.</p>
+        </article>
+        <article class="timeline__item">
+          <div class="timeline__media ph ph--sm" role="img" aria-label="Immagine segnaposto"></div>
+          <h3 class="timeline__year">2025</h3>
+          <p class="timeline__text">Apertura del desk generalista e crescita del team di L&amp;B Partners S.p.A.: da 14 a 24 professionisti.</p>
+        </article>
+        </div>
+      </div>
+    </div>
+    <div class="actions" style="margin-top: 80px">
+      <a class="btn" href="aree-di-attivita.html">Scopri di più</a>
+      <div class="actions__arrows">
+        <button class="icon-btn" type="button" data-slider-prev="storia-slider" aria-label="Precedente"><span data-icon="chevron-left"></span></button>
+        <button class="icon-btn" type="button" data-slider-next="storia-slider" aria-label="Successivo"><span data-icon="chevron-right"></span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section section--dark on-dark" aria-labelledby="tr-title">
   <div class="container">
     <div class="section-head">
-      <p class="t-eyebrow">Track Record</p>
+      <p class="t-eyebrow">Selected credentials</p>
       <h2 class="t-display" id="tr-title">Una vocazione all’eccellenza</h2>
     </div>
     <div class="slider" id="tr-slider" data-slider>
@@ -174,50 +214,6 @@
       <div class="actions__arrows">
         <button class="icon-btn" type="button" data-slider-prev="tr-slider" aria-label="Precedente"><span data-icon="chevron-left"></span></button>
         <button class="icon-btn" type="button" data-slider-next="tr-slider" aria-label="Successivo"><span data-icon="chevron-right"></span></button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" aria-labelledby="storia-title">
-  <div class="container">
-    <div class="section-head">
-      <h2 class="t-h2" id="storia-title">La nostra storia</h2>
-    </div>
-  </div>
-  <div class="container">
-    <div class="timeline">
-      <div class="deco-bars deco-bars--wall" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
-      <div class="slider" id="storia-slider" data-slider>
-        <div class="slider__track" tabindex="0" aria-label="Tappe della nostra storia">
-        <article class="timeline__item">
-          <div class="timeline__media ph ph--sm" role="img" aria-label="Immagine segnaposto"></div>
-          <h3 class="timeline__year">2004</h3>
-          <p class="timeline__text">Fondazione di L&amp;B Partners S.p.A. con focus sulla consulenza finanziaria nel settore delle energie rinnovabili e delle infrastrutture in Italia.</p>
-        </article>
-        <article class="timeline__item">
-          <div class="timeline__media ph ph--sm" role="img" aria-label="Immagine segnaposto"></div>
-          <h3 class="timeline__year">2008</h3>
-          <p class="timeline__text">Prime operazioni di project finance nel settore eolico e fotovoltaico italiano.</p>
-        </article>
-        <article class="timeline__item">
-          <div class="timeline__media ph ph--sm" role="img" aria-label="Immagine segnaposto"></div>
-          <h3 class="timeline__year">2012</h3>
-          <p class="timeline__text">Consolidamento del posizionamento come advisor di riferimento nel mercato M&amp;A renewable italiano, con operazioni per i principali fondi infrastrutturali europei.</p>
-        </article>
-        <article class="timeline__item">
-          <div class="timeline__media ph ph--sm" role="img" aria-label="Immagine segnaposto"></div>
-          <h3 class="timeline__year">2016</h3>
-          <p class="timeline__text">Superamento di € 1 miliardo di valore complessivo nelle operazioni di M&amp;A gestite. Entrata nel segmento idroelettrico e biomassa.</p>
-        </article>
-        </div>
-      </div>
-    </div>
-    <div class="actions" style="margin-top: 80px">
-      <a class="btn" href="aree-di-attivita.html">Scopri di più</a>
-      <div class="actions__arrows">
-        <button class="icon-btn" type="button" data-slider-prev="storia-slider" aria-label="Precedente"><span data-icon="chevron-left"></span></button>
-        <button class="icon-btn" type="button" data-slider-next="storia-slider" aria-label="Successivo"><span data-icon="chevron-right"></span></button>
       </div>
     </div>
   </div>
