@@ -30,17 +30,18 @@
     <nav class="main-nav" aria-label="Principale">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <button class="main-nav__link is-active" type="button" data-dropdown aria-expanded="false" aria-controls="dd-chi-siamo"><span class="label" data-label="Chi Siamo">Chi Siamo</span><span data-icon="chevron-down"></span></button>
+          <button class="main-nav__link" type="button" data-dropdown aria-expanded="false" aria-controls="dd-chi-siamo"><span class="label" data-label="Chi Siamo">Chi Siamo</span><span data-icon="chevron-down"></span></button>
           <div class="dropdown" id="dd-chi-siamo">
             <ul class="dropdown__nav">
             <li><a href="la-societa.html">La Società</a></li>
             <li><a href="professionisti.html">Professionisti</a></li>
-            <li><a href="track-record.html" class="is-active" aria-current="page">Track Record</a></li>
             </ul>
           </div>
         </li>
         <li class="main-nav__item"><a class="main-nav__link" href="aree-di-attivita.html"><span class="label" data-label="Aree di Attività">Aree di Attività</span></a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="mercati.html"><span class="label" data-label="Mercati">Mercati</span></a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="industry.html"><span class="label" data-label="Industry">Industry</span></a></li>
+        <li class="main-nav__item"><a class="main-nav__link is-active" href="track-record.html" aria-current="page"><span class="label" data-label="Track Record">Track Record</span></a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="news.html"><span class="label" data-label="News">News</span></a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="contatti.html"><span class="label" data-label="Contatti">Contatti</span></a></li>
       </ul>
 
@@ -72,11 +73,12 @@
           <ul class="offcanvas__sub">
             <li><a href="la-societa.html">La Società</a></li>
             <li><a href="professionisti.html">Professionisti</a></li>
-            <li><a href="track-record.html" class="is-active" aria-current="page">Track Record</a></li>
           </ul>
         </li>
         <li><a href="aree-di-attivita.html">Aree di Attività</a></li>
-        <li><a href="mercati.html">Mercati</a></li>
+        <li><a href="industry.html">Industry</a></li>
+        <li><a href="track-record.html" class="is-active" aria-current="page">Track Record</a></li>
+        <li><a href="news.html">News</a></li>
         <li><a href="contatti.html">Contatti</a></li>
       </ul>
     </nav>
@@ -101,9 +103,9 @@
   <div class="container filters__inner">
     <div class="filters__group">
     <label class="filter">
-      <span class="filter__label">Mercati</span>
+      <span class="filter__label">Industry</span>
       <span class="filter__control">
-        <select data-filter="mercati"><option value="">Tutti</option></select>
+        <select data-filter="industry"><option value="">Tutte</option></select>
         <span data-icon="chevron-down"></span>
       </span>
     </label>
@@ -148,7 +150,7 @@
   <div class="container">
     <p class="results-count" aria-live="polite"><span data-filter-count data-noun="deals"></span></p>
     <div class="grid-4" data-filter-list>
-<article class="card" data-filter-item data-mercati="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
+<article class="card" data-filter-item data-industry="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
   <div class="card__logo ph ph--light ph--sm" role="img" aria-label="Logo cliente (segnaposto)"></div>
   <div class="card__body">
     <h3 class="card__title">Moncada Energy Group</h3>
@@ -160,7 +162,7 @@
     <li class="tag">Project Finance</li>
   </ul>
 </article>
-<article class="card" data-filter-item data-mercati="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
+<article class="card" data-filter-item data-industry="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
   <div class="card__logo ph ph--light ph--sm" role="img" aria-label="Logo cliente (segnaposto)"></div>
   <div class="card__body">
     <h3 class="card__title">ACEA SUN CAPITAL S.r.l.</h3>
@@ -172,7 +174,7 @@
     <li class="tag">Project Finance</li>
   </ul>
 </article>
-<article class="card" data-filter-item data-mercati="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
+<article class="card" data-filter-item data-industry="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
   <div class="card__logo ph ph--light ph--sm" role="img" aria-label="Logo cliente (segnaposto)"></div>
   <div class="card__body">
     <h3 class="card__title">Equitix Italia HoldCo 2 EFII S.r.l.</h3>
@@ -184,7 +186,7 @@
     <li class="tag">Project Finance</li>
   </ul>
 </article>
-<article class="card" data-filter-item data-mercati="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
+<article class="card" data-filter-item data-industry="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
   <div class="card__logo ph ph--light ph--sm" role="img" aria-label="Logo cliente (segnaposto)"></div>
   <div class="card__body">
     <h3 class="card__title">Solaris solutions</h3>
@@ -196,7 +198,7 @@
     <li class="tag">Project Finance</li>
   </ul>
 </article>
-<article class="card" data-filter-item data-mercati="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
+<article class="card" data-filter-item data-industry="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
   <div class="card__logo ph ph--light ph--sm" role="img" aria-label="Logo cliente (segnaposto)"></div>
   <div class="card__body">
     <h3 class="card__title">Moncada Energy Group</h3>
@@ -208,7 +210,7 @@
     <li class="tag">Project Finance</li>
   </ul>
 </article>
-<article class="card" data-filter-item data-mercati="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
+<article class="card" data-filter-item data-industry="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
   <div class="card__logo ph ph--light ph--sm" role="img" aria-label="Logo cliente (segnaposto)"></div>
   <div class="card__body">
     <h3 class="card__title">ACEA SUN CAPITAL S.r.l.</h3>
@@ -220,7 +222,7 @@
     <li class="tag">Project Finance</li>
   </ul>
 </article>
-<article class="card" data-filter-item data-mercati="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
+<article class="card" data-filter-item data-industry="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
   <div class="card__logo ph ph--light ph--sm" role="img" aria-label="Logo cliente (segnaposto)"></div>
   <div class="card__body">
     <h3 class="card__title">Equitix Italia HoldCo 2 EFII S.r.l.</h3>
@@ -232,7 +234,7 @@
     <li class="tag">Project Finance</li>
   </ul>
 </article>
-<article class="card" data-filter-item data-mercati="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
+<article class="card" data-filter-item data-industry="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
   <div class="card__logo ph ph--light ph--sm" role="img" aria-label="Logo cliente (segnaposto)"></div>
   <div class="card__body">
     <h3 class="card__title">Solaris solutions</h3>
@@ -244,7 +246,7 @@
     <li class="tag">Project Finance</li>
   </ul>
 </article>
-<article class="card" data-filter-item data-mercati="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
+<article class="card" data-filter-item data-industry="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
   <div class="card__logo ph ph--light ph--sm" role="img" aria-label="Logo cliente (segnaposto)"></div>
   <div class="card__body">
     <h3 class="card__title">Moncada Energy Group</h3>
@@ -256,7 +258,7 @@
     <li class="tag">Project Finance</li>
   </ul>
 </article>
-<article class="card" data-filter-item data-mercati="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
+<article class="card" data-filter-item data-industry="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
   <div class="card__logo ph ph--light ph--sm" role="img" aria-label="Logo cliente (segnaposto)"></div>
   <div class="card__body">
     <h3 class="card__title">ACEA SUN CAPITAL S.r.l.</h3>
@@ -268,7 +270,7 @@
     <li class="tag">Project Finance</li>
   </ul>
 </article>
-<article class="card" data-filter-item data-mercati="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
+<article class="card" data-filter-item data-industry="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
   <div class="card__logo ph ph--light ph--sm" role="img" aria-label="Logo cliente (segnaposto)"></div>
   <div class="card__body">
     <h3 class="card__title">Equitix Italia HoldCo 2 EFII S.r.l.</h3>
@@ -280,7 +282,7 @@
     <li class="tag">Project Finance</li>
   </ul>
 </article>
-<article class="card" data-filter-item data-mercati="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
+<article class="card" data-filter-item data-industry="Energia ed Infrastrutture" data-area="Project Finance" data-anno="" data-ruolo="Advisor for the borrower" data-tipologia="Solar">
   <div class="card__logo ph ph--light ph--sm" role="img" aria-label="Logo cliente (segnaposto)"></div>
   <div class="card__body">
     <h3 class="card__title">Solaris solutions</h3>

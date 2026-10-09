@@ -18,9 +18,10 @@ Then open http://localhost:8000.
 index.html                    Home
 la-societa.html               Chi Siamo › La Società
 professionisti.html           Chi Siamo › Professionisti (+ professionista-<nome>.html, one per person)
-track-record.html             Chi Siamo › Track Record
+track-record.html             Track Record
 aree-di-attivita.html         Aree di Attività (+ attivita-*.html detail pages)
-mercati.html                  Mercati (+ mercato-energia-infrastrutture.html)
+industry.html                 Industry (+ industry-energia-infrastrutture.html)
+news.html                     News (placeholder, section to be designed)
 contatti.html                 Contatti
 cerca.html                    Search results
 
@@ -46,7 +47,7 @@ assets/images/                Logos + uploaded images
 - All images are placeholders (`.ph` elements). Replace each with an `<img>` (or a background image).
 - Logos live in `assets/images/` (`logo.svg`, `logo-white.svg`).
 - Filter dropdowns fill themselves from the `data-*` attributes on each card
-  (`data-mercati`, `data-area`, `data-anno`, `data-ruolo`, `data-tipologia`; multiple values separated by `|`).
+  (`data-industry`, `data-area`, `data-anno`, `data-ruolo`, `data-tipologia`; multiple values separated by `|`).
 - Header and footer are repeated in every page; edit them in all pages when they change.
 - Professionals (names, roles, contacts, bios, qualifications, languages) were imported from the
   Italian profiles on lbpartners.it/financial-advisory and are ordered by seniority

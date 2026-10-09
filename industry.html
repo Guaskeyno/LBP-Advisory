@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ricerca — LB Advice</title>
-<meta name="description" content="Risultati della ricerca nel sito.">
+<title>Industry — LB Advice</title>
+<meta name="description" content="Le industry in cui operiamo.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap">
@@ -16,8 +16,6 @@
 <link rel="stylesheet" href="css/pages.css?v=bb97b562">
 <script src="js/icons.js?v=bb97b562" defer></script>
 <script src="js/nav.js?v=bb97b562" defer></script>
-<script src="js/data/search-index.js?v=bb97b562" defer></script>
-<script src="js/search.js?v=bb97b562" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Vai al contenuto</a>
@@ -40,7 +38,7 @@
           </div>
         </li>
         <li class="main-nav__item"><a class="main-nav__link" href="aree-di-attivita.html"><span class="label" data-label="Aree di Attività">Aree di Attività</span></a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="industry.html"><span class="label" data-label="Industry">Industry</span></a></li>
+        <li class="main-nav__item"><a class="main-nav__link is-active" href="industry.html" aria-current="page"><span class="label" data-label="Industry">Industry</span></a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="track-record.html"><span class="label" data-label="Track Record">Track Record</span></a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="news.html"><span class="label" data-label="News">News</span></a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="contatti.html"><span class="label" data-label="Contatti">Contatti</span></a></li>
@@ -77,7 +75,7 @@
           </ul>
         </li>
         <li><a href="aree-di-attivita.html">Aree di Attività</a></li>
-        <li><a href="industry.html">Industry</a></li>
+        <li><a href="industry.html" class="is-active" aria-current="page">Industry</a></li>
         <li><a href="track-record.html">Track Record</a></li>
         <li><a href="news.html">News</a></li>
         <li><a href="contatti.html">Contatti</a></li>
@@ -93,27 +91,25 @@
 </div>
 
 <main id="main">
-<section class="tr-head">
+<div class="hero ph" role="img" aria-label="Immagine segnaposto">
+</div>
+<section class="page-band">
   <div class="container">
-    <p class="t-eyebrow">Ricerca</p>
-    <h1 class="t-display">Risultati</h1>
+    <h1 class="t-display">Industry</h1>
   </div>
 </section>
 
-<div class="filters">
-  <div class="container filters__inner">
-    <form class="filter-search" action="cerca.html" method="get" role="search" style="margin-left: 0">
-      <label class="visually-hidden" for="q">Cerca nel sito</label>
-      <input id="q" type="search" name="q" placeholder="Cerca per parola chiave" data-search-input required>
-      <span data-icon="search"></span>
-    </form>
-  </div>
-</div>
-
-<section class="list-section">
+<section class="section">
   <div class="container">
-    <p class="results-count" aria-live="polite" data-search-summary></p>
-    <ul class="results" data-search-results></ul>
+    <div class="tile-grid">
+      <a class="tile" href="industry-energia-infrastrutture.html">
+        <div class="tile__body">
+          <h2 class="tile__title">Energia ed Infrastrutture</h2>
+          <p class="tile__text">Con una comprovata esperienza pluriennale nel settore dell'energia e delle infrastrutture, il nostro studio è riconosciuto continuativamente in numerosi dei più prestigiosi ranking italiani e internazionali.</p>
+        </div>
+        <span class="tile__arrow" aria-hidden="true">&gt;</span>
+      </a>
+    </div>
   </div>
 </section>
 </main>
