@@ -47,7 +47,8 @@ assets/images/                Logos + uploaded images
 - All images are placeholders (`.ph` elements). Replace each with an `<img>` (or a background image).
 - Logos live in `assets/images/` (`logo.svg`, `logo-white.svg`).
 - Filter dropdowns fill themselves from the `data-*` attributes on each card
-  (`data-industry`, `data-area`, `data-anno`, `data-ruolo`, `data-tipologia`; multiple values separated by `|`).
+  (`data-industry`, `data-area`, `data-anno`, `data-ruolo`; multiple values separated by `|`).
+  Filters with no data are hidden unless marked `data-keep` (Area and Industry on Professionisti).
 - Header and footer are repeated in every page; edit them in all pages when they change.
 - Professionals (names, roles, contacts, bios, qualifications, languages) were imported from the
   Italian profiles on lbpartners.it/financial-advisory and are ordered by seniority

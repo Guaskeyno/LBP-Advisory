@@ -32,14 +32,15 @@
 
   // Populate selects. data-sort="dom" keeps the order values first appear in
   // the list (e.g. seniority); otherwise options are sorted alphabetically.
-  // A filter with no values in the data is hidden until content gains them.
+  // A filter with no values in the data is hidden until content gains them,
+  // unless it is marked data-keep (shown with just the "all" option).
   selects.forEach(function (select) {
     var key = select.getAttribute('data-filter');
     var seen = [];
     items.forEach(function (item) {
       values(item, key).forEach(function (v) { if (seen.indexOf(v) === -1) seen.push(v); });
     });
-    if (!seen.length) {
+    if (!seen.length && !select.hasAttribute('data-keep')) {
       var wrap = select.closest('.filter');
       if (wrap) wrap.hidden = true;
       return;
