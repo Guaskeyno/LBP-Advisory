@@ -1154,3 +1154,7 @@
   .list-inline--legal { margin-top: 24px; }
   .site-footer__social { align-items: flex-start; }
 }
+
+.site-footer__brand .site-footer__vat {
+  margin-top: 8px;
+}
