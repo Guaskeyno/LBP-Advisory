@@ -28,9 +28,9 @@
   margin-top: clamp(0px, 9vw, 136px);
 }
 
-/* La Società */
-.experience .t-h2 + * {
-  margin-top: 32px;
+/* La Società — heading left, body right (reference "La nostra esperienza") */
+.experience .split {
+  align-items: start;
 }
 
 /* Intro paragraphs on listing pages */
