@@ -1,6 +1,6 @@
 /**
  * Header navigation
- * - Dropdowns open on hover (desktop) or click/keyboard, inside a full-width
+ * - Dropdowns open on hover (desktop) or click/keyboard (link triggers navigate on click), inside a full-width
  *   dropbar that grows to fit — same pattern as the reference navbar.
  * - Search opens on click in the same dropbar.
  * - Off-canvas menu below 1200px with focus trap and Escape to close.
@@ -69,6 +69,8 @@
     var item = trigger.closest('li') || trigger.parentElement;
 
     trigger.addEventListener('click', function (e) {
+      // A trigger that is a link (Chi Siamo) goes to its page; hover shows the panel
+      if (trigger.tagName === 'A') return;
       e.preventDefault();
       if (current && current.panel === panel) close(false);
       else open(trigger, panel);

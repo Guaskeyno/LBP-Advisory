@@ -287,16 +287,17 @@
 .feature-list__link {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 20px;
   font-size: 1rem;
   line-height: 28px;
 }
 
+/* Same proportions as the Ifigest category marker: 10px × 40px, muted navy */
 .feature-list__mark {
   flex: none;
-  width: 36px;
-  height: 64px;
-  background: var(--color-primary);
+  width: 10px;
+  height: 40px;
+  background: rgba(25, 52, 72, 0.38);
 }
 
 .feature-list__title {
@@ -1224,4 +1225,148 @@ main:has(> .section--dark:last-child) + .site-footer {
 @media (hover: hover) {
   .news-tile:hover { background: var(--color-main); }
   .news-tile:hover .news-tile__more { text-decoration: underline; }
+}
+
+/* --- Section ribbon (Chi Siamo anchors, Banca Ifigest pattern) --------- */
+
+.subnav {
+  background: var(--color-white);
+  border-bottom: 1px solid rgba(25, 52, 72, 0.2);
+}
+
+.subnav .container {
+  padding-left: calc(var(--gutter) - 16px);
+}
+
+.subnav__list {
+  display: flex;
+  gap: 4px;
+  padding: 8px 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.subnav__list::-webkit-scrollbar { display: none; }
+
+.subnav__list a {
+  display: inline-block;
+  padding: 4px 16px;
+  border-radius: var(--radius-pill);
+  font-size: var(--fs-small);
+  letter-spacing: 0.35px;
+  white-space: nowrap;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.subnav__list a:hover,
+.subnav__list a:focus-visible {
+  background: var(--color-main);
+}
+
+/* --- Donut charts (Energia ed Infrastrutture, "I nostri numeri") ------- */
+
+.donut-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 56px var(--grid-gap);
+  margin-top: 48px;
+}
+
+@media (max-width: 1199px) {
+  .donut-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 639px) {
+  .donut-grid { grid-template-columns: minmax(0, 1fr); }
+}
+
+.donut {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  text-align: center;
+}
+
+.donut figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.donut__title {
+  min-height: 2.6em; /* two lines, so the charts line up */
+  font-family: var(--font-display);
+  font-size: var(--fs-small);
+  line-height: 1.3;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-display);
+}
+
+.donut__unit {
+  font-size: var(--fs-xs);
+  color: var(--color-muted);
+}
+
+.donut__chart {
+  position: relative;
+  width: min(220px, 100%);
+  margin-top: 24px;
+}
+
+.donut__chart svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.donut__seg {
+  fill: none;
+  stroke-width: 28;
+  transition: stroke-width var(--dur) var(--ease);
+}
+
+.donut__seg:hover { stroke-width: 34; }
+
+.donut__seg--1 { stroke: #193448; background: #193448; }
+.donut__seg--2 { stroke: #4a6478; background: #4a6478; }
+.donut__seg--3 { stroke: #8796a3; background: #8796a3; }
+.donut__seg--4 { stroke: #c3c8cc; background: #c3c8cc; }
+
+.donut__total {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  line-height: 1.2;
+  pointer-events: none;
+}
+
+.donut__total small {
+  font-family: var(--font-body);
+  font-size: var(--fs-xs);
+  color: var(--color-muted);
+}
+
+.donut__legend {
+  display: grid;
+  gap: 8px;
+  margin-top: 28px;
+  font-size: var(--fs-small);
+  text-align: left;
+}
+
+.donut__legend li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.donut__key {
+  flex: none;
+  width: 10px;
+  height: 18px;
 }
