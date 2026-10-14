@@ -1,6 +1,7 @@
 # Images
 
-Upload each image to the folder and file name below (lower case, exact spelling).
+Upload each image to the folder and file name below (lower case, exact spelling;
+`.jpeg` works as well as `.jpg`).
 The pages already point at these files: as soon as one is on GitHub it replaces the
 grey placeholder (allow a minute for GitHub Pages to publish). Until then the
 placeholder stays.
