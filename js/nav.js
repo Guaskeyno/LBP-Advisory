@@ -90,6 +90,11 @@
     });
   });
 
+  // Same-page section links (Chi Siamo anchors) close the dropdown on click
+  header.querySelectorAll('.dropdown__nav a').forEach(function (link) {
+    link.addEventListener('click', function () { close(false); });
+  });
+
   dropbar.addEventListener('mouseenter', function () {
     if (current && !current.panel.classList.contains('search-drop')) clearTimeout(hideTimer);
   });
@@ -160,6 +165,19 @@
   toggle.addEventListener('click', openCanvas);
   offcanvas.querySelectorAll('[data-offcanvas-close]').forEach(function (el) {
     el.addEventListener('click', closeCanvas);
+  });
+
+  // Section links on the current page: close the menu so the jump is visible
+  offcanvas.querySelectorAll('.offcanvas__nav a[href*="#"]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      var url = new URL(link.href);
+      var target = url.pathname === location.pathname && document.getElementById(url.hash.slice(1));
+      closeCanvas();
+      if (!target) return;
+      e.preventDefault();
+      history.pushState(null, '', url.hash);
+      requestAnimationFrame(function () { target.scrollIntoView({ behavior: 'smooth' }); });
+    });
   });
 
   offcanvas.addEventListener('keydown', function (e) {

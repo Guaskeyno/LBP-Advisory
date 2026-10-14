@@ -93,6 +93,10 @@
   gap: 24px;
 }
 
+.actions--end {
+  justify-content: flex-end;
+}
+
 .actions__arrows {
   display: flex;
   gap: 16px;
@@ -272,36 +276,38 @@
 
 /* --- Feature list (reference: rows with icon tile, divider, arrow) ------- */
 
-.feature-list {
+/* Home "Competenze": titles only, divided rows with a rectangle in place of
+   the reference icon ("Soluzioni d'investimento" on lbcapitalsgr.it) */
+.feature-list__item + .feature-list__item {
+  margin-top: 20px;
+  padding-top: 20px;
   border-top: 1px solid var(--color-primary);
 }
 
-.feature-list__item {
-  border-bottom: 1px solid var(--color-primary);
+.feature-list__link {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 1rem;
+  line-height: 28px;
 }
 
-.feature-list__link {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 20px;
-  gap: 12px;
-  align-items: start;
-  padding: 12px 0 12px 8px;
-  font-size: var(--fs-small);
-  line-height: var(--lh-body);
+.feature-list__mark {
+  flex: none;
+  width: 36px;
+  height: 64px;
+  background: var(--color-primary);
 }
 
 .feature-list__title {
-  display: block;
   font-weight: 700;
+  text-decoration: underline transparent;
+  text-underline-offset: 4px;
+  transition: text-decoration-color var(--dur) var(--ease);
 }
 
-.feature-list__link .icon {
-  align-self: center;
-  transition: transform var(--dur) var(--ease);
-}
-
-.feature-list__link:hover .icon {
-  transform: translateX(4px);
+.feature-list__link:hover .feature-list__title {
+  text-decoration-color: currentColor;
 }
 
 /* --- Cards -------------------------------------------------------------- */
@@ -759,6 +765,10 @@
   pointer-events: none;
 }
 
+.list-grid {
+  padding-top: 40px;
+}
+
 .results-count {
   padding-block: 24px;
   font-family: var(--font-display);
@@ -1148,10 +1158,6 @@
   .list-inline a { padding-inline: 0; }
   .list-inline--legal { margin-top: 24px; }
   .site-footer__social { align-items: flex-start; }
-}
-
-.site-footer__brand .site-footer__vat {
-  margin-top: 8px;
 }
 
 /* When a page ends on a navy section, separate it from the navy footer

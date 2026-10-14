@@ -16,11 +16,11 @@ Then open http://localhost:8000.
 
 ```
 index.html                    Home
-la-societa.html               Chi Siamo › La Società
-professionisti.html           Chi Siamo › Professionisti (+ professionista-<nome>.html, one per person)
+la-societa.html               Chi Siamo (nav dropdown links to its #esperienza, #selected-credentials, #key-people)
+professionisti.html           Professionisti (+ professionista-<nome>.html, one per person)
 track-record.html             Track Record
 aree-di-attivita.html         Aree di Attività (+ attivita-*.html detail pages)
-industry.html                 Industry (+ industry-energia-infrastrutture.html)
+industry.html                 Industry (+ industry-energia-infrastrutture.html, industry-mid-cap.html)
 news.html                     News (placeholder, section to be designed)
 contatti.html                 Contatti
 cerca.html                    Search results

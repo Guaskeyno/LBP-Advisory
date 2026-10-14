@@ -9,13 +9,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap">
 <link rel="preload" href="assets/fonts/Meghana.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="css/tokens.css?v=acd85d0b">
-<link rel="stylesheet" href="css/base.css?v=acd85d0b">
-<link rel="stylesheet" href="css/header.css?v=acd85d0b">
-<link rel="stylesheet" href="css/components.css?v=acd85d0b">
-<link rel="stylesheet" href="css/pages.css?v=acd85d0b">
-<script src="js/icons.js?v=acd85d0b" defer></script>
-<script src="js/nav.js?v=acd85d0b" defer></script>
+<link rel="stylesheet" href="css/tokens.css?v=3a2aec42">
+<link rel="stylesheet" href="css/base.css?v=3a2aec42">
+<link rel="stylesheet" href="css/header.css?v=3a2aec42">
+<link rel="stylesheet" href="css/components.css?v=3a2aec42">
+<link rel="stylesheet" href="css/pages.css?v=3a2aec42">
+<script src="js/icons.js?v=3a2aec42" defer></script>
+<script src="js/nav.js?v=3a2aec42" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Vai al contenuto</a>
@@ -29,14 +29,16 @@
     <nav class="main-nav" aria-label="Principale">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <button class="main-nav__link is-active" type="button" data-dropdown aria-expanded="false" aria-controls="dd-chi-siamo"><span class="label" data-label="Chi Siamo">Chi Siamo</span><span data-icon="chevron-down"></span></button>
+          <button class="main-nav__link" type="button" data-dropdown aria-expanded="false" aria-controls="dd-chi-siamo"><span class="label" data-label="Chi Siamo">Chi Siamo</span><span data-icon="chevron-down"></span></button>
           <div class="dropdown" id="dd-chi-siamo">
             <ul class="dropdown__nav">
-            <li><a href="la-societa.html">La Società</a></li>
-            <li><a href="professionisti.html" class="is-active" aria-current="page">Professionisti</a></li>
+            <li><a href="la-societa.html#esperienza">La nostra esperienza</a></li>
+            <li><a href="la-societa.html#selected-credentials">Selected credentials</a></li>
+            <li><a href="la-societa.html#key-people">Key People</a></li>
             </ul>
           </div>
         </li>
+        <li class="main-nav__item"><a class="main-nav__link is-active" href="professionisti.html" aria-current="page"><span class="label" data-label="Professionisti">Professionisti</span></a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="aree-di-attivita.html"><span class="label" data-label="Aree di Attività">Aree di Attività</span></a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="industry.html"><span class="label" data-label="Industry">Industry</span></a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="track-record.html"><span class="label" data-label="Track Record">Track Record</span></a></li>
@@ -70,10 +72,12 @@
         <li>
           <span>Chi Siamo</span>
           <ul class="offcanvas__sub">
-            <li><a href="la-societa.html">La Società</a></li>
-            <li><a href="professionisti.html" class="is-active" aria-current="page">Professionisti</a></li>
+            <li><a href="la-societa.html#esperienza">La nostra esperienza</a></li>
+            <li><a href="la-societa.html#selected-credentials">Selected credentials</a></li>
+            <li><a href="la-societa.html#key-people">Key People</a></li>
           </ul>
         </li>
+        <li><a href="professionisti.html" class="is-active" aria-current="page">Professionisti</a></li>
         <li><a href="aree-di-attivita.html">Aree di Attività</a></li>
         <li><a href="industry.html">Industry</a></li>
         <li><a href="track-record.html">Track Record</a></li>
@@ -134,7 +138,6 @@
         <img src="assets/images/logo-white.svg" width="200" height="32" alt="L&amp;B Partners Financial Advisory">
       </a>
       <p>L&amp;B Partners S.p.A. fa parte<br>del Gruppo Bancario Ifigest</p>
-      <p class="site-footer__vat">P. IVA 06136280721</p>
     </div>
     <nav class="site-footer__links" aria-label="Footer">
       <ul class="list-inline">
