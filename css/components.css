@@ -125,6 +125,21 @@
 }
 
 .ph--sm::after { width: 24px; height: 24px; }
+
+/* Uploaded image (assets/images/…) sits over the placeholder; if the file is
+   missing the <img> removes itself and the placeholder shows */
+.ph > img {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__logo > img {
+  object-fit: contain;
+}
 .ph--square { aspect-ratio: 1 / 1; }
 .ph--light { background: var(--color-white); }
 
@@ -504,6 +519,7 @@
 .person .ph {
   position: absolute;
   inset: 0;
+  z-index: 0;
   background: var(--color-surface);
 }
 
