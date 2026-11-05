@@ -31,8 +31,8 @@ the sides are cropped, so keep the subject in the centre.
 
 ## Professionals — `people/` (JPG, portrait 2:3, 1200 × 1800 px)
 
-Shown whole on each person's profile page; the Professionisti cards crop it to a square from
-the top, with the name and role on a light fade over the bottom.
+Shown whole on each person's profile page; the Professionisti cards and the Chi Siamo
+"Team Senior" section crop it to a square from the top.
 
 | File | Person |
 |---|---|
@@ -59,19 +59,6 @@ the top, with the name and role on a light fade over the bottom.
 | `people/francesco-antonio-schiavariello.jpg` | Francesco Antonio Schiavariello — Analyst |
 | `people/giorgio-servadio.jpg` | Giorgio Servadio — Analyst |
 | `people/marco-toffenetti.jpg` | Marco Toffenetti — Analyst |
-
-## Key People — `key-people/` (JPG, square, 600 × 600 px)
-
-The Chi Siamo "Key People" portraits, with the grey bar drawn into the image.
-
-| File | Person |
-|---|---|
-| `key-people/gianguido-arcangeli.jpg` | Gianguido Arcangeli |
-| `key-people/rocco-giorgio.jpg` | Rocco Giorgio |
-| `key-people/paola-pellegrini.jpg` | Paola Pellegrini |
-| `key-people/serena-quaranta.jpg` | Serena Quaranta |
-| `key-people/marcello-rizzo.jpg` | Marcello Rizzo |
-| `key-people/stefano-galbusera.jpg` | Stefano Galbusera |
 
 ## Client logos — `clients/` (PNG with transparent background, square, 256 × 256 px)
 

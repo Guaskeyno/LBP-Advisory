@@ -47,7 +47,7 @@ assets/images/                Logos + uploaded images
 ## Content notes
 
 - Every placeholder (`.ph`) already points at a fixed file in `assets/images/` (hero/, people/,
-  key-people/, clients/). Upload the file under that name and it replaces the placeholder;
+  clients/). Upload the file under that name and it replaces the placeholder;
   the full list is in `assets/images/README.md`.
 - Logos live in `assets/images/` (`logo.svg`, `logo-white.svg`).
 - Filter dropdowns fill themselves from the `data-*` attributes on each card

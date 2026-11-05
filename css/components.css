@@ -144,22 +144,21 @@
 /* Portrait (2:3, as the team photos) on profile pages */
 .ph--portrait {
   aspect-ratio: 2 / 3;
-  width: min(400px, 100%);
+  width: min(290px, 100%);
   justify-self: end;
 }
 
-/* Professionisti cards: square crop from the top of the portrait, with a light
-   fade at the bottom so the navy name stays readable over the photo */
-.person .ph > img {
-  object-position: center 15%;
+@media (min-width: 960px) {
+  .profile-head__grid .ph--portrait {
+    position: sticky;
+    top: calc(var(--header-h) + 24px);
+  }
 }
 
-.person .ph:has(> img)::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  background: linear-gradient(to top, rgba(242, 242, 242, 0.96) 0, rgba(242, 242, 242, 0.85) 28%, rgba(242, 242, 242, 0) 55%);
+/* Square crops of the 2:3 team portraits keep the face: anchor near the top */
+.person .ph > img,
+.kp-photo > img {
+  object-position: center 15%;
 }
 .ph--square { aspect-ratio: 1 / 1; }
 .ph--light { background: var(--color-white); }
@@ -529,33 +528,30 @@
 
 /* Person card (professionisti) */
 .person {
-  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  gap: 6px;
-  aspect-ratio: 1 / 1;
-  padding: 24px;
+  height: 100%;
   background: var(--color-surface);
-  overflow: hidden;
+  color: var(--color-primary);
+  transition: background-color var(--dur) var(--ease);
 }
 
 .person .ph {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  background: var(--color-surface);
+  aspect-ratio: 1 / 1;
+  background: var(--color-main-shade);
 }
 
-.person .ph::after {
-  top: 40%;
+.person .ph > img {
+  transition: transform 0.4s var(--ease);
 }
 
-.person > :not(.ph) {
+.person__body {
   position: relative;
-}
-
-.person {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px;
   container-type: inline-size;
 }
 
@@ -563,7 +559,7 @@
    follows the card width (capped at the eyebrow size) so long names fit */
 .person__name {
   font-family: var(--font-display);
-  font-size: min(var(--fs-eyebrow), 8.4cqi);
+  font-size: min(var(--fs-eyebrow), 8.6cqi);
   line-height: var(--lh-heading);
 }
 
@@ -573,11 +569,34 @@
 }
 
 .person__role {
-  font-size: var(--fs-body);
+  padding-right: 40px; /* clear of the arrow */
+  font-size: var(--fs-small);
+  line-height: var(--lh-body);
 }
 
-.person:hover .ph {
-  background: var(--color-main);
+/* Arrow pill: signals the whole card opens the profile */
+.person__arrow {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 28px;
+  height: 28px;
+  padding: 6px;
+  border-radius: var(--radius-pill);
+  background: var(--color-primary);
+  color: var(--color-white);
+  transition: transform var(--dur) var(--ease);
+}
+
+.person:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+@media (hover: hover) {
+  .person:hover { background: var(--color-main); }
+  .person:hover .ph > img { transform: scale(1.03); }
+  .person:hover .person__arrow { transform: translateX(4px); }
 }
 
 /* --- Slider ------------------------------------------------------------- */
@@ -894,14 +913,23 @@
 
 .profile-head__grid {
   display: grid;
-  grid-template-columns: minmax(0, 741px) minmax(0, 500px);
+  grid-template-columns: minmax(0, 760px) minmax(0, 290px);
   justify-content: space-between;
+  align-items: start;
   gap: 40px;
+}
+
+.profile-head {
+  padding-bottom: 80px;
+}
+
+.profile-bio {
+  margin-top: 56px;
 }
 
 @media (max-width: 959px) {
   .profile-head__grid { grid-template-columns: minmax(0, 1fr); }
-  .profile-head__grid .ph { max-width: 400px; justify-self: start; }
+  .profile-head__grid .ph { max-width: 220px; justify-self: start; grid-row: 1; }
 }
 
 .profile-head__name {
