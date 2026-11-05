@@ -38,10 +38,12 @@ js/nav.js                     Dropdown/dropbar, search drop, mobile off-canvas
 js/slider.js                  Scroll-snap sliders with prev/next
 js/filters.js                 Track Record / Professionisti filters (reads data-* on items)
 js/search.js                  Site search (cerca.html)
+js/hero-video.js              Landing hero video: play once, pause/play button, reduced motion
 js/data/search-index.js       Search index, one entry per page
 
 assets/fonts/                 Meghana (woff2 + otf)
 assets/images/                Logos + uploaded images
+assets/video/                 Landing hero animation (home-16x9.mp4; home-3x4.mp4 on phones)
 ```
 
 ## Content notes

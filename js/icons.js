@@ -7,6 +7,8 @@
   'use strict';
 
   var ICONS = {
+    'play': '<polygon fill="none" stroke="currentColor" points="6.5 5 14.5 10 6.5 15"/>',
+    'pause': '<line fill="none" stroke="currentColor" stroke-width="1.4" x1="7.5" y1="5" x2="7.5" y2="15"/><line fill="none" stroke="currentColor" stroke-width="1.4" x1="12.5" y1="5" x2="12.5" y2="15"/>',
     'arrow-left': '<polyline fill="none" stroke="currentColor" points="10 14 5 9.5 10 5"/><line fill="none" stroke="currentColor" x1="16" y1="9.5" x2="5" y2="9.52"/>',
     'arrow-right': '<polyline fill="none" stroke="currentColor" points="10 5 15 9.5 10 14"/><line fill="none" stroke="currentColor" x1="4" y1="9.5" x2="15" y2="9.5"/>',
     'chevron-down': '<polyline fill="none" stroke="currentColor" stroke-width="1.03" points="16 7 10 13 4 7"/>',
