@@ -439,38 +439,20 @@
 }
 
 @media (max-width: 959px) {
-  /* not square on small screens: keep top room so the hover bar never
-     overlaps the title */
-  .tile { aspect-ratio: auto; min-height: 320px; padding-top: 128px; }
-}
-
-.tile::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 32px;
-  width: 12px;
-  height: 0;
-  background: var(--color-primary);
-  transition: height 0.35s ease;
+  /* not square on small screens */
+  .tile { aspect-ratio: auto; min-height: 280px; }
 }
 
 .tile:focus-visible {
   background: var(--color-main);
-}
-
-.tile:focus-visible::before {
-  height: 96px;
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 /* Hover effects only for real pointers, so they don't stick after a tap */
 @media (hover: hover) {
   .tile:hover {
     background: var(--color-main);
-  }
-
-  .tile:hover::before {
-    height: 96px;
   }
 }
 
