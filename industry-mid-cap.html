@@ -9,13 +9,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap">
 <link rel="preload" href="assets/fonts/Meghana.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="css/tokens.css?v=c2b8dffa">
-<link rel="stylesheet" href="css/base.css?v=c2b8dffa">
-<link rel="stylesheet" href="css/header.css?v=c2b8dffa">
-<link rel="stylesheet" href="css/components.css?v=c2b8dffa">
-<link rel="stylesheet" href="css/pages.css?v=c2b8dffa">
-<script src="js/icons.js?v=c2b8dffa" defer></script>
-<script src="js/nav.js?v=c2b8dffa" defer></script>
+<link rel="stylesheet" href="css/tokens.css?v=69a5b2b1">
+<link rel="stylesheet" href="css/base.css?v=69a5b2b1">
+<link rel="stylesheet" href="css/header.css?v=69a5b2b1">
+<link rel="stylesheet" href="css/components.css?v=69a5b2b1">
+<link rel="stylesheet" href="css/pages.css?v=69a5b2b1">
+<script src="js/icons.js?v=69a5b2b1" defer></script>
+<script src="js/nav.js?v=69a5b2b1" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Vai al contenuto</a>
@@ -126,23 +126,26 @@
 <section class="section" style="padding-top: 0">
   <div class="container">
     <div class="dark-box dark-box--stack on-dark">
-      <h2 class="t-h2">News</h2>
+      <div class="dark-box__head">
+        <h2 class="t-h2">News</h2>
+        <a class="btn btn--light" href="news.html">Tutte le news</a>
+      </div>
       <div class="news-grid">
-        <a class="news-tile" href="news.html">
-          <span class="news-tile__date">GG Mese AAAA</span>
-          <span class="news-tile__title">Titolo dell’articolo (segnaposto)</span>
-          <span class="news-tile__more">Leggi</span>
-        </a>
-        <a class="news-tile" href="news.html">
-          <span class="news-tile__date">GG Mese AAAA</span>
-          <span class="news-tile__title">Titolo dell’articolo (segnaposto)</span>
-          <span class="news-tile__more">Leggi</span>
-        </a>
-        <a class="news-tile" href="news.html">
-          <span class="news-tile__date">GG Mese AAAA</span>
-          <span class="news-tile__title">Titolo dell’articolo (segnaposto)</span>
-          <span class="news-tile__more">Leggi</span>
-        </a>
+        <article class="news-tile">
+          <time class="news-tile__date" datetime="2026-07-21">21 luglio 2026</time>
+          <h3 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-spa-con-anemos-private-investments-nellacquisizione-della-maggioranza-di-terre-di-puglia.html">L&amp;B Partners SpA con Anemos Private Investments nell&#x27;acquisizione della maggioranza di Terre di Puglia</a></h3>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile">
+          <time class="news-tile__date" datetime="2025-11-04">04 novembre 2025</time>
+          <h3 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-spa-closing-eni-cede-20-plenitude-ares.html">L&amp;B Partners SpA nel closing in cui Eni cede il 20% di Plenitude ad Ares</a></h3>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile">
+          <time class="news-tile__date" datetime="2025-10-29">29 ottobre 2025</time>
+          <h3 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-spa-nella-cessione-del-60-di-glob-eco-s-r-l-da-lm-holding-s-r-l-e-mister-chef-s-r-l-a-greenthesis-s-p-a.html">L&amp;B Partners SpA nella cessione del 60% di Glob Eco S.r.l. da LM Holding S.r.l. e Mister Chef S.r.l. a Greenthesis S.p.A.</a></h3>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
       </div>
     </div>
   </div>

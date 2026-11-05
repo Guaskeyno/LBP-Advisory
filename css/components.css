@@ -1234,10 +1234,11 @@ main:has(> .section--dark:last-child) + .site-footer {
 }
 
 .news-tile {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  min-height: 180px;
+  min-height: 220px;
   padding: 24px;
   background: var(--color-surface);
   color: var(--color-primary);
@@ -1246,16 +1247,39 @@ main:has(> .section--dark:last-child) + .site-footer {
 
 .news-tile__date,
 .news-tile__more {
-  font-size: var(--fs-xs);
+  font-size: var(--fs-small);
   line-height: var(--lh-body);
 }
 
 .news-tile__title {
   flex: 1;
-  font-size: var(--fs-body);
+  font-family: var(--font-body);
+  font-size: 1.125rem;
   font-weight: 700;
-  line-height: var(--lh-tight);
-  letter-spacing: var(--tracking-card);
+  line-height: 1.35;
+  letter-spacing: 0.2px;
+  text-transform: none;
+}
+
+/* The title link covers the whole tile, so the card is one click target
+   with a single, meaningful link name */
+.news-tile__link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.news-tile__link:focus-visible {
+  outline: none;
+}
+
+.news-tile:has(.news-tile__link:focus-visible) {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.on-dark .news-tile:has(.news-tile__link:focus-visible) {
+  outline-color: var(--color-white);
 }
 
 .news-tile__more {
@@ -1265,6 +1289,109 @@ main:has(> .section--dark:last-child) + .site-footer {
 @media (hover: hover) {
   .news-tile:hover { background: var(--color-main); }
   .news-tile:hover .news-tile__more { text-decoration: underline; }
+}
+
+/* News page grid (4 / 2 / 1 columns) */
+.news-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--grid-gap);
+}
+
+@media (max-width: 1199px) {
+  .news-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 639px) {
+  .news-list { grid-template-columns: minmax(0, 1fr); }
+  .news-tile { min-height: 0; }
+}
+
+.dark-box__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 24px;
+}
+
+/* --- News article ------------------------------------------------------- */
+
+.article__head {
+  padding-block: 56px 48px;
+  background: var(--color-main);
+}
+
+.article__date {
+  display: block;
+  font-size: var(--fs-small);
+}
+
+.article__title {
+  max-width: 1000px;
+  margin-top: 12px;
+  font-family: var(--font-body);
+  font-size: clamp(1.625rem, 1.2rem + 1.4vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.article__head .tags {
+  margin-top: 24px;
+}
+
+.article__body {
+  max-width: 760px;
+  font-size: var(--fs-body);
+  line-height: 1.65;
+}
+
+.article__body p + p,
+.article__body p + ul,
+.article__body ul + p {
+  margin-top: 16px;
+}
+
+.article__body ul {
+  padding-left: 1.25em;
+  list-style: disc;
+}
+
+.article__body a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.article__sources {
+  max-width: 760px;
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(25, 52, 72, 0.2);
+}
+
+.article__sources h2 {
+  font-family: var(--font-body);
+  font-size: var(--fs-small);
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.article__sources ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-top: 8px;
+}
+
+.article__sources a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 /* --- Section ribbon (Chi Siamo anchors, Banca Ifigest pattern) --------- */

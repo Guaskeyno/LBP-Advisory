@@ -4,18 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>News — LB Advice</title>
-<meta name="description" content="News e aggiornamenti.">
+<meta name="description" content="Le operazioni di rilievo assistite da L&amp;B Partners, gli aggiornamenti del team e i principali sviluppi nei mercati in cui operiamo.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap">
 <link rel="preload" href="assets/fonts/Meghana.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="css/tokens.css?v=c2b8dffa">
-<link rel="stylesheet" href="css/base.css?v=c2b8dffa">
-<link rel="stylesheet" href="css/header.css?v=c2b8dffa">
-<link rel="stylesheet" href="css/components.css?v=c2b8dffa">
-<link rel="stylesheet" href="css/pages.css?v=c2b8dffa">
-<script src="js/icons.js?v=c2b8dffa" defer></script>
-<script src="js/nav.js?v=c2b8dffa" defer></script>
+<link rel="stylesheet" href="css/tokens.css?v=69a5b2b1">
+<link rel="stylesheet" href="css/base.css?v=69a5b2b1">
+<link rel="stylesheet" href="css/header.css?v=69a5b2b1">
+<link rel="stylesheet" href="css/components.css?v=69a5b2b1">
+<link rel="stylesheet" href="css/pages.css?v=69a5b2b1">
+<script src="js/icons.js?v=69a5b2b1" defer></script>
+<script src="js/nav.js?v=69a5b2b1" defer></script>
+<script src="js/filters.js?v=69a5b2b1" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Vai al contenuto</a>
@@ -107,12 +108,420 @@
 <section class="page-band">
   <div class="container">
     <h1 class="t-display">News</h1>
+    <p class="t-subtitle">Le operazioni di rilievo assistite da L&amp;B Partners, gli aggiornamenti del team e i principali sviluppi nei mercati in cui operiamo.</p>
   </div>
 </section>
 
-<section class="section">
+<div class="filters filters--sticky" role="search" aria-label="Filtra le news">
+  <div class="container filters__inner">
+    <div class="filters__group">
+    <label class="filter">
+      <span class="filter__label">Servizio</span>
+      <span class="filter__control">
+        <select data-filter="servizio"><option value="">Tutti</option></select>
+        <span data-icon="chevron-down"></span>
+      </span>
+    </label>
+    <label class="filter">
+      <span class="filter__label">Settore</span>
+      <span class="filter__control">
+        <select data-filter="settore"><option value="">Tutti</option></select>
+        <span data-icon="chevron-down"></span>
+      </span>
+    </label>
+    <label class="filter">
+      <span class="filter__label">Anno</span>
+      <span class="filter__control">
+        <select data-filter="anno" data-sort="dom"><option value="">Tutti</option></select>
+        <span data-icon="chevron-down"></span>
+      </span>
+    </label>
+    </div>
+    <div class="filter-search">
+      <label class="visually-hidden" for="news-search">Cerca per parola chiave</label>
+      <input id="news-search" type="search" placeholder="Cerca per parola chiave" data-filter-search>
+      <span data-icon="search"></span>
+    </div>
+  </div>
+</div>
+
+<section class="list-section">
   <div class="container">
-    <p class="t-lead">Questa sezione è in arrivo.</p>
+    <p class="visually-hidden" aria-live="polite"><span data-filter-count data-noun="news"></span></p>
+    <div class="news-list list-grid" data-filter-list data-page-size="16">
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2026">
+          <time class="news-tile__date" datetime="2026-10-30">30 ottobre 2026</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-advisor-primario-operatore-rinnovabili-cessione-capital-dynamics-progetti-agrivoltaici-sicilia-incentivati-ferx.html">L&amp;B Partners S.p.A. advisor di un primario operatore delle rinnovabili nella cessione a Capital Dynamics di due progetti agrivoltaici in Sicilia incentivati FER X</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2026">
+          <time class="news-tile__date" datetime="2026-10-16">16 ottobre 2026</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-advisor-finanziario-eos-im-cessione-sonnedix-due-impianti-fotovoltaici-54-mwp.html">L&amp;B Partners S.P.A. advisor finanziario di EOS IM nella cessione a Sonnedix di due impianti fotovoltaici da 54 MWp</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2026">
+          <time class="news-tile__date" datetime="2026-09-25">25 settembre 2026</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-s-p-a-con-juwi-group-nella-cessione-di-un-portafoglio-di-progetti-fotovoltaici-a-kelag-international.html">L&amp;B Partners S.p.A. con JUWI Group nella cessione di un portafoglio di progetti fotovoltaici a Kelag International</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2026">
+          <time class="news-tile__date" datetime="2026-08-06">06 agosto 2026</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-spa-hanwha-energy-europe-cessione-ox2-200-mw-accumulo-energetico-puglia.html">L&amp;B Partners SpA con Hanwha Energy Europe nella cessione a OX2 di 200 MW di accumulo energetico in Puglia</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2026">
+          <time class="news-tile__date" datetime="2026-08-05">05 agosto 2026</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-spa-gruppo-retina-finanziamento-355-milioni-euro-dieci-impianti-biometano.html">L&amp;B Partners S.p.A. con il gruppo Retina nel finanziamento da 355 milioni di euro per dieci impianti biometano</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2026">
+          <time class="news-tile__date" datetime="2026-07-31">31 luglio 2026</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-web-cessione-enel-parco-eolico-84-mw-campania.html">L&amp;B Partners SpA con W.E.B nella cessione a Enel di un parco eolico da 84 MW in Campania</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Mid Cap" data-anno="2026">
+          <time class="news-tile__date" datetime="2026-07-21">21 luglio 2026</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-spa-con-anemos-private-investments-nellacquisizione-della-maggioranza-di-terre-di-puglia.html">L&amp;B Partners SpA con Anemos Private Investments nell&#x27;acquisizione della maggioranza di Terre di Puglia</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2026">
+          <time class="news-tile__date" datetime="2026-07-09">09 luglio 2026</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-nextenergy-capital-finanziamento-93-milioni-nxpv-italy-holdco-impianto-agrivoltaico-avanzato-campania.html">L&amp;B Partners S.p.A. con NextEnergy Capital nel finanziamento da 93 milioni di euro a NXP V Italy HoldCo S.r.l. per un impianto agrivoltaico avanzato da 73,5 MW in Campania</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2026">
+          <time class="news-tile__date" datetime="2026-07-08">08 luglio 2026</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-igi-private-equity-gruppo-weblade-ethica-global-investments.html">L&amp;B Partners SpA con IGI Private Equity, che rileva il controllo del Gruppo WeBlade da Ethica Global Investments</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2026">
+          <time class="news-tile__date" datetime="2026-06-08">08 giugno 2026</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-spa-nrgfarm-acquisizione-autorizzazioni-agrivoltaiche-sud-rienergy-soc-agr.html">L&amp;B Partners S.p.A. con NRGfarm S.p.A. nell’acquisizione del 90% di due autorizzazioni agrivoltaiche da Sud Rienergy Soc. Agr. S.r.l.</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2026">
+          <time class="news-tile__date" datetime="2026-04-17">17 aprile 2026</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-spa-nella-cessione-di-una-quota-del-portafoglio-rinnovabile-di-swisspower-renewables-ag-e-nella-strutturazione-della-partnership-con-kelag.html">L&amp;B Partners SpA nella cessione di una quota del portafoglio rinnovabile di Swisspower Renewables AG e nella strutturazione della partnership con Kelag</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2026">
+          <time class="news-tile__date" datetime="2026-02-23">23 febbraio 2026</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-moncada-energy-group-contratto-finanziamento-41-milioni-euro-impianto-fotovoltaico-773-mwp-agrigento.html">L&amp;B Partners S.p.A. con Moncada Energy Group S.r.l. nel contratto di finanziamento di 41,2 milioni di euro per un impianto fotovoltaico da 77,3 MWp</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2026">
+          <time class="news-tile__date" datetime="2026-01-14">14 gennaio 2026</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-spa-advisor-equitix-acquisto-ulteriore-30-capitale-sociale-acea-sun-capital-rifinanziamento-indebitamento-finanziario-target.html">L&amp;B Partners SpA advisor di Equitix nell’acquisto di un ulteriore 30% del capitale sociale di Acea Sun Capital Srl e nel rifinanziamento dell&#x27;indebitamento finanziario della target</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2025">
+          <time class="news-tile__date" datetime="2025-12-15">15 dicembre 2025</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-spa-lb-partners-avvocati-associati-solarys-nascita-gruppo-everest.html">L&amp;B Partners SpA e L&amp;B Partners Avvocati Associati con Solarys nella nascita del Gruppo Everest</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2025">
+          <time class="news-tile__date" datetime="2025-12-05">05 dicembre 2025</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-spa-advisor-gruppo-aren-cessione-53-mw-eolici-agsm-aim.html">L&amp;B Partners SpA advisor del Gruppo Aren nella cessione di 53 MW eolici ad AGSM AIM</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Mid Cap" data-anno="2025">
+          <time class="news-tile__date" datetime="2025-11-04">04 novembre 2025</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-spa-closing-eni-cede-20-plenitude-ares.html">L&amp;B Partners SpA nel closing in cui Eni cede il 20% di Plenitude ad Ares</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Mid Cap" data-anno="2025">
+          <time class="news-tile__date" datetime="2025-10-29">29 ottobre 2025</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-spa-nella-cessione-del-60-di-glob-eco-s-r-l-da-lm-holding-s-r-l-e-mister-chef-s-r-l-a-greenthesis-s-p-a.html">L&amp;B Partners SpA nella cessione del 60% di Glob Eco S.r.l. da LM Holding S.r.l. e Mister Chef S.r.l. a Greenthesis S.p.A.</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2025">
+          <time class="news-tile__date" datetime="2025-08-07">07 agosto 2025</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-spa-con-gruppo-lcf-alliance-nella-strutturazione-di-un-nuovo-finanziamento-per-complessivi-95-mln-con-societe-generale-e-bayernlb.html">L&amp;B Partners SpA con Gruppo LCF Alliance nella strutturazione di un nuovo finanziamento per complessivi 95 Mln con Societe Generale e BayernLB</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2025">
+          <time class="news-tile__date" datetime="2025-07-22">22 luglio 2025</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-spa-impax-aiem-group-perfezionamento-accordo-vincolante-compravendita-portafoglio-progetti-fotovoltaici-italia.html">L&amp;B Partners SpA con Impax e AIEM Group nel perfezionamento di un accordo vincolante per compravendita di un portafoglio di 22 progetti fotovoltaici in Italia</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2025">
+          <time class="news-tile__date" datetime="2025-07-01">01 luglio 2025</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-spa-con-e2e-nella-cessione-di-un-portafoglio-di-117-impianti-fotovoltaici-ad-ardian.html">L&amp;B Partners SpA con E2E nella cessione di un portafoglio di 117 impianti fotovoltaici ad Ardian</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2025">
+          <time class="news-tile__date" datetime="2025-06-23">23 giugno 2025</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-spa-ares-alternative-credit-management-acquisto-20-plenitude-eni-2-miliardi.html">L&amp;B Partners SpA con Ares Alternative Credit Management nell&#x27;acquisto del 20% di Plenitude da Eni per 2 miliardi</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2025">
+          <time class="news-tile__date" datetime="2025-05-16">16 maggio 2025</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-spa-solar-fab-finanziamento-green-50-milioni-fortore-energia.html">L&amp;B Partners S.p.A. con Solar Fab nel finanziamento green da 50,7 milioni per Fortore Energia</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2025">
+          <time class="news-tile__date" datetime="2025-05-14">14 maggio 2025</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-project-bond-pionieristico-528-milioni-impianti-agrivoltaici-avanzati-tariffa-gse.html">L&amp;B Partners nel project bond pionieristico da 52,8 milioni per impianti agrivoltaici avanzati con tariffa GSE</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2025">
+          <time class="news-tile__date" datetime="2025-05-13">13 maggio 2025</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-advisor-acquisizione-tages-impianti-biometano-greenfield-finpower-project.html">L&amp;B Partners tra gli advisor coinvolti nell’acquisizione da parte di Tages Capital SGR di due impianti biometano greenfield da Finpower Project</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2025">
+          <time class="news-tile__date" datetime="2025-04-14">14 aprile 2025</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-juwi-energie-rinnovabili-gruppo-juwi-gmbh-cessione-progetti-fotovoltaici-kelag-italia-gruppo-ki-kelag-international-gmbh.html">L&amp;B Partners  S.p.A. con Juwi Energie Rinnovabili S.r.l., società del Gruppo Juwi GmbH, nella cessione di progetti fotovoltaici a Kelag Italia S.r.l., società del gruppo KI-Kelag International GmbH</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="" data-settore="" data-anno="2025">
+          <time class="news-tile__date" datetime="2025-04-02">02 aprile 2025</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-spa-continua-crescere-marcello-rizzo-guida-dipartimento-mid-market-ma.html">L&amp;B Partners S.p.A. continua a crescere con Marcello Rizzo alla guida del dipartimento Mid-Market M&amp;A</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2025">
+          <time class="news-tile__date" datetime="2025-03-28">28 marzo 2025</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-s-p-a-al-fianco-di-retina-nel-finanziamento-da-240-milioni-per-lo-sviluppo-di-nuovi-impianti-di-biometano-in-italia.html">L&amp;B Partners S.p.A. al fianco di Retina nel finanziamento da 240 milioni per lo sviluppo di nuovi impianti di biometano in Italia</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2025">
+          <time class="news-tile__date" datetime="2025-01-29">29 gennaio 2025</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-finanziamento-portafoglio-impianti-fv-gruppo-undo.html">L&amp;B Partners nel finanziamento di un portafoglio di impianti fv del Gruppo UNDO</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2025">
+          <time class="news-tile__date" datetime="2025-01-28">28 gennaio 2025</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-project-financing-portafoglio-fotovoltaico-moncada-energy-group-2.html">L&amp;B Partners nel project financing del portafoglio fotovoltaico di Moncada Energy Group</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2025">
+          <time class="news-tile__date" datetime="2025-01-27">27 gennaio 2025</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-banco-bpm-banca-ifigest-sace-moncada-energy-group-sviluppo-rinnovabili.html">Banco BPM, Banca Ifigest e SACE a fianco di Moncada Energy Group per accelerare lo sviluppo delle energie rinnovabili</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2024">
+          <time class="news-tile__date" datetime="2024-03-25">25 marzo 2024</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-nel-finanziamento-di-hirpinia-holding.html">L&amp;B Partners nel finanziamento di Hirpinia Holding</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2024">
+          <time class="news-tile__date" datetime="2024-03-21">21 marzo 2024</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-con-esdigis4u-nella-cessione-di-impianti-fotovoltaici-a-green-yellow.html">L&amp;B Partners con Esdigis4u nella cessione di impianti fotovoltaici a Green Yellow</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2024">
+          <time class="news-tile__date" datetime="2024-01-18">18 gennaio 2024</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-algebris-green-transition-fund-acquisisce-il-100-di-esapro-gli-advisor.html">Algebris Green Transition Fund acquisisce il 100% di Esapro. Gli advisor</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2023">
+          <time class="news-tile__date" datetime="2023-12-22">22 dicembre 2023</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-con-wkn-gmbh-nella-cessione-di-progetti-fotovoltaici-a-un-fondo-infrastrutturale.html">L&amp;B Partners con WKN GmbH nella cessione di progetti fotovoltaici a un fondo infrastrutturale</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2023">
+          <time class="news-tile__date" datetime="2023-12-21">21 dicembre 2023</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-nella-cessione-di-idronord-a-edison-di-un-portafoglio-di-impianti-idroelettrici.html">L&amp;B Partners nella cessione di Idronord a Edison di un portafoglio di impianti idroelettrici</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Infrastrutture e Circular Economy" data-anno="2023">
+          <time class="news-tile__date" datetime="2023-10-27">27 ottobre 2023</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-con-e-shore-nella-partnership-con-enermia-per-la-mobilita-elettrica-integrata.html">L&amp;B Partners con E-shore nella partnership con EnerMia per la mobilità elettrica integrata</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2023">
+          <time class="news-tile__date" datetime="2023-10-23">23 ottobre 2023</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-con-en-e-r-wind-nella-cessione-di-due-impianti-eolici.html">L&amp;B Partners con EN.E.R. Wind nella cessione di due impianti eolici</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2023">
+          <time class="news-tile__date" datetime="2023-09-18">18 settembre 2023</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-con-irr-nellacquisizione-e-trasferimento-ad-ardian-di-icq-holding.html">L&amp;B Partners con IRR nell’acquisizione e trasferimento ad Ardian di ICQ Holding</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2023">
+          <time class="news-tile__date" datetime="2023-08-07">07 agosto 2023</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-nel-project-finance-per-quattro-parchi-eolici-del-gruppo-icq-holding.html">L&amp;B Partners nel project finance per quattro parchi eolici del Gruppo ICQ Holding</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2023">
+          <time class="news-tile__date" datetime="2023-05-29">29 maggio 2023</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-con-italian-renewable-resources-nel-finanziamento-da-parte-di-intesa-sanpaolo.html">L&amp;B Partners con Italian Renewable Resources nel finanziamento da parte di Intesa Sanpaolo</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2023">
+          <time class="news-tile__date" datetime="2023-01-11">11 gennaio 2023</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-nel-finanziamento-per-4-impianti-eolici-del-gruppo-ardian.html">L&amp;B Partners nel finanziamento per 4 impianti eolici del gruppo Ardian</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2023">
+          <time class="news-tile__date" datetime="2023-01-09">09 gennaio 2023</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-con-italian-renewable-resources-nel-finanziamento-da-parte-di-banco-bpm.html">L&amp;B Partners con Italian Renewable Resources nel finanziamento da parte di Banco Bpm</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2022">
+          <time class="news-tile__date" datetime="2022-12-22">22 dicembre 2022</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-natixis-cib-e-renexia-completano-il-rifinanziamento-del-parco-eolico-beleolico.html">Natixis Cib e Renexia completano il rifinanziamento del parco eolico Beleolico</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="" data-settore="" data-anno="2022">
+          <time class="news-tile__date" datetime="2022-12-19">19 dicembre 2022</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-banca-ifigest-ok-ad-aggregazione-con-lb-partners.html">Banca Ifigest, ok ad aggregazione con L&amp;B Partners</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Mid Cap" data-anno="2022">
+          <time class="news-tile__date" datetime="2022-12-15">15 dicembre 2022</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-nelloperazione-lb-capital-e-shore.html">L&amp;B Partners nell’operazione L&amp;B Capital – E-Shore</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Infrastrutture e Circular Economy" data-anno="2022">
+          <time class="news-tile__date" datetime="2022-12-06">06 dicembre 2022</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-natixis-cib-e-lb-partners-con-leitner-nella-vendita-del-72-delle-quote-di-pisamover.html">Natixis Cib e L&amp;B Partners con Leitner nella vendita del 72% delle quote di Pisamover</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2022">
+          <time class="news-tile__date" datetime="2022-11-17">17 novembre 2022</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-nel-finanziamento-a-infrastrutture-accordato-da-sienna-private-credit.html">L&amp;B Partners nel finanziamento a Infrastrutture accordato da Sienna Private Credit</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2022">
+          <time class="news-tile__date" datetime="2022-09-29">29 settembre 2022</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-advisor-di-infrastrutture-per-la-partnership-con-plenitude.html">L&amp;B Partners advisor di Infrastrutture per la partnership con Plenitude</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="" data-settore="" data-anno="2022">
+          <time class="news-tile__date" datetime="2022-07-14">14 luglio 2022</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-cristian-pulitano-entra-in-lb-partners-come-capo-del-corporate-investments.html">Cristian Pulitano entra in L&amp;B Partners come capo del corporate investments</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2022">
+          <time class="news-tile__date" datetime="2022-07-06">06 luglio 2022</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-nella-cessione-di-un-portafoglio-fotovoltaico-a-blue-elephant-energy-ag.html">L&amp;B Partners nella cessione di un portafoglio fotovoltaico a Blue Elephant Energy AG</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2022">
+          <time class="news-tile__date" datetime="2022-06-08">08 giugno 2022</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-a2a-e-ardian-perfezionata-lacquisizione-di-portafogli-eolici-e-fotovoltaici.html">A2A e Ardian: perfezionata l’acquisizione di portafogli eolici e fotovoltaici</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2022">
+          <time class="news-tile__date" datetime="2022-06-07">07 giugno 2022</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-tutti-gli-advisor-nel-green-loan-per-leolico-e-lagrovoltaico-di-engie-in-sicilia.html">Tutti gli advisor nel green loan per l’eolico e l’agrovoltaico di Engie in Sicilia</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2022">
+          <time class="news-tile__date" datetime="2022-06-01">01 giugno 2022</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-rothschild-co-e-lb-partners-nel-deal-tra-abn-ambro-ed-erg.html">Rothschild &amp; Co e L&amp;B Partners nel deal tra Abn Ambro ed Erg</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2022">
+          <time class="news-tile__date" datetime="2022-03-28">28 marzo 2022</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-advisor-di-equitix-ed-acea-nelloperazione-di-finanziamento-da-190-milioni.html">L&amp;B Partners advisor di Equitix ed Acea nell’operazione di finanziamento da 190 milioni</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2022">
+          <time class="news-tile__date" datetime="2022-01-22">22 gennaio 2022</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-a2a-e-ardian-firmano-due-accordi-vincolanti-per-lacquisizione-di-portafogli-eolici-e-fotovoltaici.html">A2A e Ardian firmano due accordi vincolanti per l&#x27;acquisizione di portafogli eolici e fotovoltaici</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2022">
+          <time class="news-tile__date" datetime="2022-01-11">11 gennaio 2022</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-rothschild-e-intesa-sanpaolo-nel-deal-tra-nextenergy-capital-e-tages.html">L&amp;B Partners, Rothschild e Intesa Sanpaolo nel deal tra NextEnergy Capital e Tages</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Infrastrutture e Circular Economy" data-anno="2021">
+          <time class="news-tile__date" datetime="2021-12-20">20 dicembre 2021</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-immobiliare-ceresa-cede-fratelli-ceresa-a-seaside-tutti-gli-advisor-2.html">Immobiliare Ceresa cede Fratelli Ceresa a Seaside: tutti gli advisor</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2021">
+          <time class="news-tile__date" datetime="2021-10-05">05 ottobre 2021</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-glennmont-partners-e-pggm-infrastructure-fund-cedono-impianti-eolici-a-eni-deal-da-500-milioni-2.html">Fortore 2020 acquisisce Fortore Energia e rifinanzia un portafoglio eolico</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2021">
+          <time class="news-tile__date" datetime="2021-10-05">05 ottobre 2021</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-advisor-di-ravano-power-nella-vendita-di-carbotrade-gas-a-beyfin-assistita-da-dms.html">L&amp;B Partners con Enersol nel rifinanziamento da 32 milioni con Intesa</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2021">
+          <time class="news-tile__date" datetime="2021-10-04">04 ottobre 2021</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-glennmont-partners-e-pggm-infrastructure-fund-cedono-impianti-eolici-a-eni-deal-da-500-milioni.html">Glennmont Partners e PGGM Infrastructure Fund cedono impianti eolici a Eni. Deal da 500 milioni</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2021">
+          <time class="news-tile__date" datetime="2021-05-18">18 maggio 2021</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partner-advisor-di-ravano-power-nella-vendita-di-carbotrade-gas-a-beyfin-assistita-da-dms.html">L&amp;B Partners advisor di Ravano Power nella vendita di Carbotrade Gas a Beyfin assistita da Dms</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2021">
+          <time class="news-tile__date" datetime="2021-01-12">12 gennaio 2021</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-1949-2-2.html">L&amp;B Partners con Swisspower Rinnovabili Italia in finanziamento da 58,1 milioni</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2020">
+          <time class="news-tile__date" datetime="2020-09-03">03 settembre 2020</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-ardian-incassa-un-rifinanziamento-da-48-mln-euro-per-il-parco-eolico-monte-grighine-in-sardegna.html">Ardian incassa un rifinanziamento da 48 mln euro per il parco eolico Monte Grighine in Sardegna</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2020">
+          <time class="news-tile__date" datetime="2020-01-20">20 gennaio 2020</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-cerignola-wind-tozzi-green-rifinanzia-tre-impianti-eolici-con-un-project-finance-da-674-mln-euro.html">Cerignola Wind (Tozzi Green) rifinanzia tre impianti eolici con un project finance da 67,4 mln euro</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2019">
+          <time class="news-tile__date" datetime="2019-12-11">11 dicembre 2019</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-il-fondo-glennmont-partners-rileva-andali-energia-proprietaria-di-un-parco-eolico-in-calabria.html">Il fondo Glennmont Partners rileva Andali Energia, proprietaria di un parco eolico in Calabria</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2019">
+          <time class="news-tile__date" datetime="2019-11-22">22 novembre 2019</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-swisspower-renewables-rileva-5-centrali-idroelettriche-in-lombardia-e-basilicata.html">Swisspower Renewables rileva 5 centrali idroelettriche in Lombardia e Basilicata</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2019">
+          <time class="news-tile__date" datetime="2019-11-20">20 novembre 2019</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-1949-2.html">Eni gas e luce compra 70% Evolvere da L&amp;B Capital ed Enventi. Gli advisors del deal</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2019">
+          <time class="news-tile__date" datetime="2019-01-25">25 gennaio 2019</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-co-advisor-di-glennmont-nella-vendita-del-portafoglio-fotovoltaico-da-854-mw-a-tages-capital.html">L&amp;B Partners co-advisor di Glennmont nella vendita del portafoglio fotovoltaico da 85,4 MW a Tages Capital</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2019">
+          <time class="news-tile__date" datetime="2019-01-25">25 gennaio 2019</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-consulente-di-serin-nella-vendita-di-sei-impianti-fotovoltaici-a-ef-solare-italia.html">L&amp;B Partners consulente di Serin nella vendita di sei impianti fotovoltaici a EF Solare Italia</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2018">
+          <time class="news-tile__date" datetime="2018-05-17">17 maggio 2018</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-consulente-finanziario-del-gruppo-israeliano-ellomay-capital-ltd.html">L&amp;B Partners consulente finanziario del gruppo israeliano Ellomay Capital Ltd</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2017">
+          <time class="news-tile__date" datetime="2017-11-03">03 novembre 2017</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-s-p-a-nel-project-financing-dellimpianto-a-biomasse-di-agritre.html">L&amp;B Partners S.p.A. nel project financing dell’impianto a biomasse di Agritre</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="M&amp;A Advisory" data-settore="Energia" data-anno="2017">
+          <time class="news-tile__date" datetime="2017-10-13">13 ottobre 2017</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-scende-al-fianco-di-dolomiti-derivazioni-s-r-l.html">L&amp;B Partners scende al fianco di Dolomiti Derivazioni S.r.l.</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2017">
+          <time class="news-tile__date" datetime="2017-06-27">27 giugno 2017</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-lb-partners-s-p-a-a-fianco-del-gruppo-veronagest.html">L&amp;B Partners S.p.A. a fianco del Gruppo Veronagest</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+        <article class="news-tile" data-filter-item data-servizio="Debt Advisory &amp; Project Finance" data-settore="Energia" data-anno="2017">
+          <time class="news-tile__date" datetime="2017-06-13">13 giugno 2017</time>
+          <h2 class="news-tile__title"><a class="news-tile__link" href="news-concluso-il-contratto-di-finanziamento-riguardante-impianti-idroelettrici-swisspower.html">Concluso il contratto di finanziamento riguardante impianti idroelettrici Swisspower</a></h2>
+          <span class="news-tile__more" aria-hidden="true">Leggi</span>
+        </article>
+    </div>
+    <p class="empty-state" data-filter-empty hidden>Nessuna news corrisponde ai filtri selezionati.</p>
+    <div class="list-more"><button class="btn" type="button" data-filter-more hidden>Mostra altre news</button></div>
   </div>
 </section>
 </main>

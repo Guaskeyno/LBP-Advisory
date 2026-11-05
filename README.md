@@ -23,7 +23,7 @@ aree-di-attivita.html         Servizi (+ attivita-*.html detail pages)
 industry.html                 Settori (+ industry-energia.html, industry-mid-cap.html,
                               industry-infrastrutture-circular-economy.html)
 en.html                       English version placeholder (IT | EN switch in the header)
-news.html                     News (placeholder, section to be designed)
+news.html                     News (+ news-<slug>.html, one page per article)
 contatti.html                 Contatti
 cerca.html                    Search results
 
@@ -60,3 +60,5 @@ assets/images/                Logos + uploaded images
   with Gianguido Arcangeli and Rocco Giorgio first.
 - Track Record: the 208 deals are imported from lbpartners.it/financial-advisory/track-record
   (texts in English, as on the source). Servizio and Settore are assigned from each deal's text.
+- News: the 74 "In primo piano" articles are imported from lbpartners.it/financial-advisory/in-primo-piano;
+  links to team members point at the profile pages here. Sector pages show their latest 3.
