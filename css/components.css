@@ -1631,3 +1631,19 @@ main:has(> .section--dark:last-child) + .site-footer {
   width: 40px;
   height: 40px;
 }
+
+/* --- Home: figures footnote, section heads with a CTA on the right ------- */
+
+.stats-note {
+  margin-top: 24px;
+  font-size: var(--fs-small);
+  font-style: italic;
+}
+
+.section-head--row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 24px;
+}
