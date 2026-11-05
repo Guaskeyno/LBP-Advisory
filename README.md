@@ -52,7 +52,7 @@ assets/images/                Logos + uploaded images
 - Logos live in `assets/images/` (`logo.svg`, `logo-white.svg`).
 - Filter dropdowns fill themselves from the `data-*` attributes on each card
   (`data-servizio`, `data-settore`, `data-anno`, `data-ruolo`, …; multiple values separated by `|`).
-  Filters with no data are hidden unless marked `data-keep` (Area and Industry on Professionisti).
+  Filters with no data are hidden unless marked `data-keep` (Servizio and Settore on Professionisti).
 - Header and footer are repeated in every page; edit them in all pages when they change.
 - Professionals (names, roles, bios) were imported from the Italian profiles on
   lbpartners.it/financial-advisory and are ordered by seniority (Partner → Managing Director →

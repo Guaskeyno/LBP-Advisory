@@ -140,6 +140,27 @@
 .card__logo > img {
   object-fit: contain;
 }
+
+/* Portrait (2:3, as the team photos) on profile pages */
+.ph--portrait {
+  aspect-ratio: 2 / 3;
+  width: min(400px, 100%);
+  justify-self: end;
+}
+
+/* Professionisti cards: square crop from the top of the portrait, with a light
+   fade at the bottom so the navy name stays readable over the photo */
+.person .ph > img {
+  object-position: center 15%;
+}
+
+.person .ph:has(> img)::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background: linear-gradient(to top, rgba(242, 242, 242, 0.96) 0, rgba(242, 242, 242, 0.85) 28%, rgba(242, 242, 242, 0) 55%);
+}
 .ph--square { aspect-ratio: 1 / 1; }
 .ph--light { background: var(--color-white); }
 
@@ -880,7 +901,7 @@
 
 @media (max-width: 959px) {
   .profile-head__grid { grid-template-columns: minmax(0, 1fr); }
-  .profile-head__grid .ph { max-width: 420px; }
+  .profile-head__grid .ph { max-width: 400px; justify-self: start; }
 }
 
 .profile-head__name {

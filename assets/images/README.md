@@ -29,10 +29,10 @@ the sides are cropped, so keep the subject in the centre.
 | `hero/contatti.jpg` | Contatti (`contatti.html`) |
 | `hero/news.jpg` | News (`news.html`) |
 
-## Professionals — `people/` (JPG, square, 1200 × 1200 px)
+## Professionals — `people/` (JPG, portrait 2:3, 1200 × 1800 px)
 
-Used on the Professionisti cards (name and role are written over the bottom of the
-image, so keep that area light and plain) and on each person's profile page.
+Shown whole on each person's profile page; the Professionisti cards crop it to a square from
+the top, with the name and role on a light fade over the bottom.
 
 | File | Person |
 |---|---|
