@@ -127,6 +127,19 @@
     }
   });
 
+  /* --- Text that opens an external site (not styled as a link) --------- */
+
+  document.querySelectorAll('.ext-trigger[data-href]').forEach(function (el) {
+    var href = el.getAttribute('data-href');
+    if (!href) return; // URL not provided yet
+    el.setAttribute('role', 'link');
+    el.setAttribute('tabindex', '0');
+    el.classList.add('is-active');
+    var go = function () { window.open(href, '_blank', 'noopener'); };
+    el.addEventListener('click', go);
+    el.addEventListener('keydown', function (e) { if (e.key === 'Enter') go(); });
+  });
+
   /* --- Off-canvas ------------------------------------------------------- */
 
   var offcanvas = document.getElementById('offcanvas');

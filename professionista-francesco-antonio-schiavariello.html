@@ -9,13 +9,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap">
 <link rel="preload" href="assets/fonts/Meghana.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="css/tokens.css?v=0889a479">
-<link rel="stylesheet" href="css/base.css?v=0889a479">
-<link rel="stylesheet" href="css/header.css?v=0889a479">
-<link rel="stylesheet" href="css/components.css?v=0889a479">
-<link rel="stylesheet" href="css/pages.css?v=0889a479">
-<script src="js/icons.js?v=0889a479" defer></script>
-<script src="js/nav.js?v=0889a479" defer></script>
+<link rel="stylesheet" href="css/tokens.css?v=7fcaa988">
+<link rel="stylesheet" href="css/base.css?v=7fcaa988">
+<link rel="stylesheet" href="css/header.css?v=7fcaa988">
+<link rel="stylesheet" href="css/components.css?v=7fcaa988">
+<link rel="stylesheet" href="css/pages.css?v=7fcaa988">
+<script src="js/icons.js?v=7fcaa988" defer></script>
+<script src="js/nav.js?v=7fcaa988" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Vai al contenuto</a>
@@ -33,14 +33,15 @@
           <div class="dropdown" id="dd-chi-siamo">
             <ul class="dropdown__nav">
             <li><a href="la-societa.html#esperienza">La nostra esperienza</a></li>
-            <li><a href="la-societa.html#selected-credentials">Selected credentials</a></li>
-            <li><a href="la-societa.html#key-people">Key People</a></li>
+            <li><a href="la-societa.html#storia">La nostra storia</a></li>
+            <li><a href="la-societa.html#selected-transactions">Selected Transactions</a></li>
+            <li><a href="la-societa.html#team-senior">Team Senior</a></li>
             </ul>
           </div>
         </li>
         <li class="main-nav__item"><a class="main-nav__link is-active" href="professionisti.html" aria-current="page"><span class="label" data-label="Professionisti">Professionisti</span></a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="aree-di-attivita.html"><span class="label" data-label="Aree di Attività">Aree di Attività</span></a></li>
-        <li class="main-nav__item"><a class="main-nav__link" href="industry.html"><span class="label" data-label="Industry">Industry</span></a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="aree-di-attivita.html"><span class="label" data-label="Servizi">Servizi</span></a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="industry.html"><span class="label" data-label="Settori">Settori</span></a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="track-record.html"><span class="label" data-label="Track Record">Track Record</span></a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="news.html"><span class="label" data-label="News">News</span></a></li>
         <li class="main-nav__item"><a class="main-nav__link" href="contatti.html"><span class="label" data-label="Contatti">Contatti</span></a></li>
@@ -54,6 +55,11 @@
         </form>
       </div>
     </nav>
+
+    <div class="lang-switch" aria-label="Lingua">
+      <a href="index.html" lang="it" aria-current="true">IT</a>
+      <a href="en.html" lang="en" hreflang="en">EN</a>
+    </div>
 
     <button class="nav-toggle" type="button" aria-controls="offcanvas" aria-expanded="false" aria-label="Apri il menu"><span data-icon="menu"></span></button>
   </div>
@@ -73,13 +79,14 @@
           <a href="la-societa.html">Chi Siamo</a>
           <ul class="offcanvas__sub">
             <li><a href="la-societa.html#esperienza">La nostra esperienza</a></li>
-            <li><a href="la-societa.html#selected-credentials">Selected credentials</a></li>
-            <li><a href="la-societa.html#key-people">Key People</a></li>
+            <li><a href="la-societa.html#storia">La nostra storia</a></li>
+            <li><a href="la-societa.html#selected-transactions">Selected Transactions</a></li>
+            <li><a href="la-societa.html#team-senior">Team Senior</a></li>
           </ul>
         </li>
         <li><a href="professionisti.html" class="is-active" aria-current="page">Professionisti</a></li>
-        <li><a href="aree-di-attivita.html">Aree di Attività</a></li>
-        <li><a href="industry.html">Industry</a></li>
+        <li><a href="aree-di-attivita.html">Servizi</a></li>
+        <li><a href="industry.html">Settori</a></li>
         <li><a href="track-record.html">Track Record</a></li>
         <li><a href="news.html">News</a></li>
         <li><a href="contatti.html">Contatti</a></li>
@@ -101,13 +108,8 @@
       <a class="back-link" href="professionisti.html"><span data-icon="arrow-left"></span>Tutti i professionisti</a>
       <h1 class="profile-head__name">Francesco Antonio<br>Schiavariello</h1>
       <p class="profile-head__role">Analyst</p>
-      <div class="contact-grid">
-        <p class="contact-row"><span data-icon="location"></span>Milano</p>
-        <p class="contact-row"><span data-icon="world"></span>Italiano, Inglese</p>
-        <p class="contact-row"><span data-icon="mail"></span><a href="mailto:francesco.schiavariello@lbpartners.it">francesco.schiavariello@lbpartners.it</a></p>
-      </div>
       <div class="profile-actions">
-        <a class="btn btn--sm" href="data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0D%0AVERSION%3A3.0%0D%0AN%3ASchiavariello%3BFrancesco%20Antonio%3B%3B%3B%0D%0AFN%3AFrancesco%20Antonio%20Schiavariello%0D%0AORG%3AL%26B%20Partners%20S.p.A.%0D%0ATITLE%3AAnalyst%0D%0AEMAIL%3BTYPE%3DWORK%3Afrancesco.schiavariello%40lbpartners.it%0D%0AADR%3BTYPE%3DWORK%3A%3B%3BVia%20Turati%2C%206%3BMilano%3B%3B20121%3BItalia%0D%0AEND%3AVCARD" download="francesco-antonio-schiavariello.vcf"><span data-icon="download" class="icon--sm"></span>Scarica contatto</a>
+        <a class="btn" href="contatti.html">Contatti</a>
       </div>
     </div>
     <div class="ph ph--square"><img src="assets/images/people/francesco-antonio-schiavariello.jpg" alt="Ritratto di Francesco Antonio Schiavariello" decoding="async" loading="lazy" onerror="if(/\.jpg$/.test(this.src)){this.src=this.src.replace(/\.jpg$/,'.jpeg')}else{this.remove()}"></div>
@@ -120,12 +122,6 @@
       <h2 class="t-h3">Competenze ed esperienze</h2>
       <p>Francesco è entrato a far parte di <strong>L&amp;B Partners S.p.A.</strong> nel 2023.</p> <p>Ha maturato esperienza in <strong>Audit</strong> presso KPMG e in <em><strong>Asset Valuation</strong></em> presso Quantyx Advisors S.r.l.</p>
     </div>
-    <aside>
-      <div class="meta-block">
-        <h2>Qualifiche</h2>
-        <div class="meta-text"><p>Laurea Magistrale in Amministrazione, Finanza e Controllo – Università Commerciale L.Bocconi (2023)</p> <p>Laurea triennale in Economia Aziendale e Management – Università Commerciale L. Bocconi (2020)</p></div>
-      </div>
-    </aside>
   </div>
 </section>
 </main>
@@ -136,11 +132,11 @@
       <a class="logo" href="index.html" aria-label="LB Advice — Home">
         <img src="assets/images/logo-white.svg" width="200" height="32" alt="L&amp;B Partners Financial Advisory">
       </a>
-      <p>L&amp;B Partners S.p.A. fa parte<br>del Gruppo Bancario Ifigest</p>
+      <p>L&amp;B Partners S.p.A. fa parte<br>del <span class="ext-trigger" data-href="">Gruppo Bancario Ifigest</span></p>
     </div>
     <nav class="site-footer__links" aria-label="Footer">
       <ul class="list-inline">
-        <li><a href="contatti.html">Via Turati, 6 – 20121 Milano</a></li>
+        <li><a href="contatti.html">Sede Legale: Via Turati, 6 – 20121 Milano</a></li>
         <li><a href="tel:+390289694011">+39 02 89694011</a></li>
         <li><a href="mailto:segreteria@lbpartners.it">segreteria@lbpartners.it</a></li>
         <li class="list-inline__break" aria-hidden="true"></li>
@@ -149,7 +145,7 @@
       </ul>
       <ul class="list-inline list-inline--legal">
         <li><a href="#">Privacy &amp; Cookie Policy</a></li>
-        <li><a href="#">Codice Condotta</a></li>
+        <li><a href="#">Codice di condotta</a></li>
         <li><a href="#">Modello Organizzativo 231/01</a></li>
       </ul>
     </nav>

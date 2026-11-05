@@ -6,7 +6,8 @@
  *
  * Markup: [data-filter-list] container with [data-filter-item] children,
  *         [data-filter-count] (optional), [data-filter-empty] (optional),
- *         input[data-filter-search] (optional, full-text).
+ *         input[data-filter-search] (optional, full-text),
+ *         data-page-size on the list + [data-filter-more] button (optional paging).
  */
 (function () {
   'use strict';
@@ -20,6 +21,9 @@
   var count = document.querySelector('[data-filter-count]');
   var empty = document.querySelector('[data-filter-empty]');
   var noun = count ? count.getAttribute('data-noun') || '' : '';
+  var more = document.querySelector('[data-filter-more]');
+  var pageSize = parseInt(list.getAttribute('data-page-size'), 10) || 0;
+  var limit = pageSize;
 
   function values(item, key) {
     var raw = item.getAttribute('data-' + key) || '';
@@ -59,7 +63,13 @@
 
   if (search) search.addEventListener('input', apply);
 
+  // A new filter or search starts again from the first page
   function apply() {
+    limit = pageSize;
+    render();
+  }
+
+  function render() {
     var query = search ? normalise(search.value.trim()) : '';
     var visible = 0;
 
@@ -68,12 +78,20 @@
         return !select.value || values(item, select.getAttribute('data-filter')).indexOf(select.value) !== -1;
       });
       if (ok && query) ok = normalise(item.textContent).indexOf(query) !== -1;
-      item.hidden = !ok;
       if (ok) visible++;
+      item.hidden = !ok || (limit > 0 && visible > limit);
     });
 
     if (count) count.textContent = visible + (noun ? ' ' + noun : '');
     if (empty) empty.hidden = visible !== 0;
+    if (more) more.hidden = !(limit > 0 && visible > limit);
+  }
+
+  if (more) {
+    more.addEventListener('click', function () {
+      limit += pageSize;
+      render();
+    });
   }
 
   apply();

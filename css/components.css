@@ -255,6 +255,7 @@
   position: relative;
   padding: 8px 0 8px 16px;
   min-height: 117px;
+  container-type: inline-size;
 }
 
 .stat::before {
@@ -274,7 +275,9 @@
 .stat__value {
   display: block;
   font-family: var(--font-display);
-  font-size: var(--fs-stat);
+  /* figures like "€18MLD+" stay on one line: shrink with the column */
+  font-size: min(var(--fs-stat), 15cqi);
+  white-space: nowrap;
   line-height: 1.1;
   text-transform: uppercase;
 }
@@ -1385,4 +1388,41 @@ main:has(> .section--dark:last-child) + .site-footer {
   flex: none;
   width: 10px;
   height: 18px;
+}
+
+/* --- Track Record deal cards: logo + year row, role line, "show more" --- */
+
+.card__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.card__year {
+  font-family: var(--font-display);
+  font-size: var(--fs-small);
+  letter-spacing: var(--tracking-card);
+}
+
+.card__body .card__meta {
+  margin-top: 12px;
+  font-size: var(--fs-xs);
+  font-style: italic;
+  color: var(--color-muted);
+}
+
+.list-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+.list-more:has([hidden]) {
+  display: none;
+}
+
+/* Footer: "Gruppo Bancario Ifigest" opens the group site, styled as plain text */
+.ext-trigger.is-active {
+  cursor: pointer;
 }

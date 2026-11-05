@@ -356,3 +356,34 @@
 .offcanvas__search .search-form input::placeholder {
   color: var(--color-white);
 }
+
+/* --- Language switch (right of the search icon; EN placeholder for now) -- */
+
+.lang-switch {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: 4px;
+  font-size: var(--fs-nav);
+  letter-spacing: 0.35px;
+}
+
+.lang-switch a {
+  padding: 4px 8px;
+  border-radius: var(--radius-pill);
+  color: var(--color-primary);
+  transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+
+.lang-switch a[aria-current] {
+  font-weight: 700;
+}
+
+.lang-switch a:not([aria-current]):hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+@media (max-width: 1199px) {
+  .lang-switch { margin-left: auto; margin-right: 8px; }
+}

@@ -16,11 +16,13 @@ Then open http://localhost:8000.
 
 ```
 index.html                    Home
-la-societa.html               Chi Siamo (nav dropdown links to its #esperienza, #selected-credentials, #key-people)
+la-societa.html               Chi Siamo (nav dropdown + ribbon link to #esperienza, #storia, #selected-transactions, #team-senior)
 professionisti.html           Professionisti (+ professionista-<nome>.html, one per person)
 track-record.html             Track Record
-aree-di-attivita.html         Aree di Attività (+ attivita-*.html detail pages)
-industry.html                 Industry (+ industry-energia-infrastrutture.html, industry-mid-cap.html)
+aree-di-attivita.html         Servizi (+ attivita-*.html detail pages)
+industry.html                 Settori (+ industry-energia.html, industry-mid-cap.html,
+                              industry-infrastrutture-circular-economy.html)
+en.html                       English version placeholder (IT | EN switch in the header)
 news.html                     News (placeholder, section to be designed)
 contatti.html                 Contatti
 cerca.html                    Search results
@@ -49,9 +51,12 @@ assets/images/                Logos + uploaded images
   the full list is in `assets/images/README.md`.
 - Logos live in `assets/images/` (`logo.svg`, `logo-white.svg`).
 - Filter dropdowns fill themselves from the `data-*` attributes on each card
-  (`data-industry`, `data-area`, `data-anno`, `data-ruolo`; multiple values separated by `|`).
+  (`data-servizio`, `data-settore`, `data-anno`, `data-ruolo`, …; multiple values separated by `|`).
   Filters with no data are hidden unless marked `data-keep` (Area and Industry on Professionisti).
 - Header and footer are repeated in every page; edit them in all pages when they change.
-- Professionals (names, roles, contacts, bios, qualifications, languages) were imported from the
-  Italian profiles on lbpartners.it/financial-advisory and are ordered by seniority
-  (Partner → Managing Director → Director → Vice President → Associate → Analyst).
+- Professionals (names, roles, bios) were imported from the Italian profiles on
+  lbpartners.it/financial-advisory and are ordered by seniority (Partner → Managing Director →
+  Director → Vice President → Associate → Analyst), alphabetically by surname within each title,
+  with Gianguido Arcangeli and Rocco Giorgio first.
+- Track Record: the 208 deals are imported from lbpartners.it/financial-advisory/track-record
+  (texts in English, as on the source). Servizio and Settore are assigned from each deal's text.
