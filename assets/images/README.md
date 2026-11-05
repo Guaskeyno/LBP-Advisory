@@ -21,7 +21,6 @@ the sides are cropped, so keep the subject in the centre.
 | `hero/attivita-fusioni-acquisizioni.jpg` | M&A Advisory (`attivita-fusioni-acquisizioni.html`) |
 | `hero/attivita-debt-advisory-project-finance.jpg` | Debt Advisory & Project Finance (`attivita-debt-advisory-project-finance.html`) |
 | `hero/attivita-crisi-impresa.jpg` | Special Situations & Restructuring (`attivita-crisi-impresa.html`) |
-| `hero/home.jpg` | Home (`index.html`) |
 | `hero/industry.jpg` | Settori (`industry.html`) |
 | `hero/industry-energia.jpg` | Energia (`industry-energia.html`) |
 | `hero/industry-mid-cap.jpg` | Mid Cap (`industry-mid-cap.html`) |

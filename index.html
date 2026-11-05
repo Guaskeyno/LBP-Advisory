@@ -9,15 +9,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap">
 <link rel="preload" href="assets/fonts/Meghana.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="css/tokens.css?v=74d16373">
-<link rel="stylesheet" href="css/base.css?v=74d16373">
-<link rel="stylesheet" href="css/header.css?v=74d16373">
-<link rel="stylesheet" href="css/components.css?v=74d16373">
-<link rel="stylesheet" href="css/pages.css?v=74d16373">
-<script src="js/icons.js?v=74d16373" defer></script>
-<script src="js/nav.js?v=74d16373" defer></script>
-<script src="js/slider.js?v=74d16373" defer></script>
-<script src="js/hero-video.js?v=74d16373" defer></script>
+<link rel="stylesheet" href="css/tokens.css?v=c37da91d">
+<link rel="stylesheet" href="css/base.css?v=c37da91d">
+<link rel="stylesheet" href="css/header.css?v=c37da91d">
+<link rel="stylesheet" href="css/components.css?v=c37da91d">
+<link rel="stylesheet" href="css/pages.css?v=c37da91d">
+<script src="js/icons.js?v=c37da91d" defer></script>
+<script src="js/nav.js?v=c37da91d" defer></script>
+<script src="js/slider.js?v=c37da91d" defer></script>
+<script src="js/hero-video.js?v=c37da91d" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Vai al contenuto</a>
@@ -104,18 +104,18 @@
 </div>
 
 <main id="main">
-<div class="hero hero--video">
+<section class="hero hero--video">
   <video class="hero__video" muted playsinline preload="auto" aria-hidden="true" data-hero-video>
-    <source src="assets/video/home-3x4.mp4" type="video/mp4" media="(max-width: 639px)">
+    <source src="assets/video/home-9x16.mp4" type="video/mp4" media="(max-width: 639px)">
+    <source src="assets/video/home-3x4.mp4" type="video/mp4" media="(max-width: 959px)">
     <source src="assets/video/home-16x9.mp4" type="video/mp4">
   </video>
-  <button class="hero__toggle icon-btn" type="button" data-hero-toggle aria-label="Metti in pausa l’animazione" hidden><span data-icon="pause"></span></button>
-</div>
-<section class="page-band">
-  <div class="container">
+  <div class="hero__shade" aria-hidden="true"></div>
+  <div class="container hero__content">
     <h1 class="t-display">Strategic advice, sector expertise &amp; deal execution</h1>
     <p class="t-subtitle">M&amp;A Advisory, Debt Advisory, Special Situation Advisory, Project Finance per imprenditori, imprese e istituzioni finanziarie</p>
   </div>
+  <button class="hero__toggle icon-btn" type="button" data-hero-toggle aria-label="Metti in pausa l’animazione" hidden><span data-icon="pause"></span></button>
 </section>
 
 <section class="section intro" aria-labelledby="intro-title">

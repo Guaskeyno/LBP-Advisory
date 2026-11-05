@@ -49,6 +49,7 @@
   /* Layout */
   --container-max: 1440px;
   --gutter: 48px;
+  --subnav-h: 50px;
   --header-h: 120px;
   --section-y: clamp(56px, 4vw + 32px, 80px);
   --grid-gap: 16px;

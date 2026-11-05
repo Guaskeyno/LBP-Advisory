@@ -43,7 +43,7 @@ js/data/search-index.js       Search index, one entry per page
 
 assets/fonts/                 Meghana (woff2 + otf)
 assets/images/                Logos + uploaded images
-assets/video/                 Landing hero animation (home-16x9.mp4; home-3x4.mp4 on phones)
+assets/video/                 Landing hero animation: home-16x9 (≥960px), home-3x4 (tablets), home-9x16 (phones)
 ```
 
 ## Content notes
