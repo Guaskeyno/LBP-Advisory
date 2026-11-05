@@ -1,7 +1,7 @@
 # LB Advice — website
 
 Static site (HTML / CSS / JS, no build step). Visual language follows the L&B group reference
-site (lbcapitalsgr.it): Meghana + Lato, UIkit icon set, pill buttons and nav states, sticky header
+site (lbcapitalsgr.it): Meghana + Lato (both self-hosted), UIkit icon set, pill buttons and nav states, sticky header
 with full-width dropbar. Main UI colour is `#E5E4E2` (reference: `#C5D9C9`).
 
 ## Run locally
@@ -27,6 +27,7 @@ news.html                     News (+ news-<slug>.html, one page per article)
 contatti.html                 Contatti
 cerca.html                    Search results
 
+css/fonts.css                 @font-face for Lato (self-hosted)
 css/tokens.css                Colours, type scale, spacing — change the brand here
 css/base.css                  Reset, typography, layout primitives
 css/header.css                Header, dropdowns, dropbar, search, off-canvas
@@ -41,7 +42,7 @@ js/search.js                  Site search (cerca.html)
 js/hero-video.js              Landing hero video: play once, pause/play button, reduced motion
 js/data/search-index.js       Search index, one entry per page
 
-assets/fonts/                 Meghana (woff2 + otf)
+assets/fonts/                 Meghana (woff2 + otf), Lato 300/400/700 + italics (woff2, SIL OFL 1.1)
 assets/images/                Logos + uploaded images
 assets/video/                 Landing hero animation: home-16x9 (≥960px), home-3x4 (tablets), home-9x16 (phones)
 ```
