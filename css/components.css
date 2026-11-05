@@ -1629,3 +1629,8 @@ main:has(> .section--dark:last-child) + .site-footer {
   justify-content: space-between;
   gap: 16px 24px;
 }
+
+/* Track Record on the grey band (home): white cards so they keep their contrast */
+.tr-grey .card {
+  background: var(--color-white);
+}
