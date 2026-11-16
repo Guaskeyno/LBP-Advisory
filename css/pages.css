@@ -217,3 +217,165 @@
   background: transparent;
   color: var(--color-primary);
 }
+
+/* Legal pages (Privacy, Cookie Policy): page index on the left, text on the right */
+.legal {
+  display: grid;
+  grid-template-columns: minmax(0, 280px) minmax(0, 760px);
+  gap: 64px;
+  align-items: start;
+}
+
+@media (max-width: 959px) {
+  .legal { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+}
+
+.legal__toc {
+  padding: 24px;
+  background: var(--color-surface);
+}
+
+@media (min-width: 960px) {
+  .legal__toc {
+    position: sticky;
+    top: calc(var(--header-h) + 24px);
+  }
+}
+
+.legal__toc-title {
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.legal__toc ol {
+  padding-left: 1.25em;
+  list-style: decimal;
+  font-size: var(--fs-small);
+  line-height: var(--lh-body);
+}
+
+.legal__toc li + li {
+  margin-top: 8px;
+}
+
+.legal__toc a:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.legal__body {
+  font-size: var(--fs-body);
+  line-height: 1.65;
+}
+
+.legal__body h2 {
+  scroll-margin-top: calc(var(--header-h) + 24px);
+  margin-top: 48px;
+  margin-bottom: 12px;
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.legal__body h2:first-child {
+  margin-top: 0;
+}
+
+.legal__body h3 {
+  margin-top: 32px;
+}
+
+.legal__body p + p,
+.legal__body p + ul,
+.legal__body ul + p {
+  margin-top: 12px;
+}
+
+.legal__body ul,
+.legal__body ol {
+  padding-left: 1.25em;
+  list-style: disc;
+}
+
+.legal__body ol {
+  list-style: decimal;
+}
+
+.legal__body p + ol,
+.legal__body ol + p {
+  margin-top: 12px;
+}
+
+.legal__body li + li {
+  margin-top: 8px;
+}
+
+.legal__body a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  overflow-wrap: anywhere;
+}
+
+/* Codice di condotta, Modello 231/01: the document as one downloadable card */
+.doc-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+  max-width: 900px;
+  padding: 32px;
+  background: var(--color-surface);
+  transition: background-color var(--dur) var(--ease);
+}
+
+.doc-card__icon {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 56px;
+  height: 72px;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-size: var(--fs-small);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.doc-card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 200px;
+}
+
+.doc-card__title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.doc-card__meta {
+  font-size: var(--fs-small);
+}
+
+.doc-card .btn {
+  gap: 8px;
+}
+
+.doc-card:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+@media (hover: hover) {
+  .doc-card:hover { background: var(--color-main); }
+}
+
+.credits__name {
+  margin-top: 16px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}

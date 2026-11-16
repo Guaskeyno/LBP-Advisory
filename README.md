@@ -26,6 +26,8 @@ en.html                       English version placeholder (IT | EN switch in the
 news.html                     News (+ news-<slug>.html, one page per article)
 contatti.html                 Contatti
 cerca.html                    Search results
+privacy-policy.html, cookie-policy.html, codice-di-condotta.html,
+modello-organizzativo-231-01.html, crediti.html   Legal pages (footer links)
 
 css/fonts.css                 @font-face for Lato (self-hosted)
 css/tokens.css                Colours, type scale, spacing — change the brand here
