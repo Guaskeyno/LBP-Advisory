@@ -1609,9 +1609,20 @@ main:has(> .section--dark:last-child) + .site-footer {
   display: none;
 }
 
-/* Footer: "Gruppo Bancario Ifigest" opens the group site, styled as plain text */
+/* Footer: "Gruppo Bancario Ifigest" opens the group site; underlined so it reads as a link */
 .ext-trigger.is-active {
   cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.ext-trigger.is-active:hover {
+  text-decoration-thickness: 2px;
+}
+
+.ext-trigger.is-active:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
 }
 
 /* --- Landing hero video (logo animation) -------------------------------- */
