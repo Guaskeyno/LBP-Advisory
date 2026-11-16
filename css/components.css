@@ -1694,34 +1694,20 @@ main:has(> .section--dark:last-child) + .site-footer {
 
 .deal__logo {
   position: relative;
-  display: flex;
-  align-items: center;
+  width: min(200px, 100%);
   height: 66px;
-  padding: 0 14px;
-  background: var(--color-white);
-  overflow: hidden;
 }
 
 .deal__logo--empty {
   background: transparent;
 }
 
-.deal__name {
-  font-weight: 700;
-  font-size: var(--fs-small);
-  line-height: 1.25;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-/* the logo shows only once its file has loaded; until then the name stays visible */
+/* the logo shows only once its file has loaded; until then the placeholder stays */
 .deal__logo > img {
   position: absolute;
-  inset: 8px 14px;
-  width: calc(100% - 28px);
-  height: calc(100% - 16px);
+  inset: 0;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
   object-position: left center;
   opacity: 0;
@@ -1731,8 +1717,12 @@ main:has(> .section--dark:last-child) + .site-footer {
   opacity: 1;
 }
 
-.deal__logo:has(> img.is-loaded) .deal__name {
-  visibility: hidden;
+.deal__logo:has(> img.is-loaded) {
+  background: transparent;
+}
+
+.deal__logo:has(> img.is-loaded)::after {
+  content: none;
 }
 
 .deal__text {
@@ -1761,6 +1751,3 @@ main:has(> .section--dark:last-child) + .site-footer {
   min-height: calc(2 * 21.4px + 4px); /* room for the tags to wrap onto a second row */
 }
 
-.tr-grey .deal__logo {
-  background: var(--color-surface);
-}
