@@ -1674,3 +1674,93 @@ main:has(> .section--dark:last-child) + .site-footer {
 .tr-grey .card {
   background: var(--color-white);
 }
+
+/* --- Track Record deal card (structure of lbpartners.it track record) --- */
+/* Every region has a fixed height so all cards match: year, logo, text
+   (deals.TEXT_MAX characters, --deal-lines lines), logo, role, tags */
+
+.deal {
+  display: grid;
+  grid-template-rows: auto 66px auto 66px auto 1fr;
+  gap: 16px;
+  container-type: inline-size;
+}
+
+.deal__year {
+  font-family: var(--font-display);
+  font-size: var(--fs-small);
+  letter-spacing: var(--tracking-card);
+}
+
+.deal__logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 66px;
+  padding: 0 14px;
+  background: var(--color-white);
+  overflow: hidden;
+}
+
+.deal__logo--empty {
+  background: transparent;
+}
+
+.deal__name {
+  font-weight: 700;
+  font-size: var(--fs-small);
+  line-height: 1.25;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* the logo shows only once its file has loaded; until then the name stays visible */
+.deal__logo > img {
+  position: absolute;
+  inset: 8px 14px;
+  width: calc(100% - 28px);
+  height: calc(100% - 16px);
+  object-fit: contain;
+  object-position: left center;
+  opacity: 0;
+}
+
+.deal__logo > img.is-loaded {
+  opacity: 1;
+}
+
+.deal__logo:has(> img.is-loaded) .deal__name {
+  visibility: hidden;
+}
+
+.deal__text {
+  --deal-lines: 7;
+  height: calc(var(--deal-lines) * 1.4em);
+  font-size: var(--fs-xs);
+  line-height: 1.4;
+  overflow: hidden;
+}
+
+/* the narrowest 4-column cards (≈1280px screens) need one more line for the longest text */
+@container (max-width: 240px) {
+  .deal__text { --deal-lines: 8; }
+}
+
+.deal__role {
+  height: 2.8em; /* two lines: the longest role is 49 characters */
+  font-size: var(--fs-xs);
+  line-height: 1.4;
+  font-style: italic;
+}
+
+.deal .tags {
+  align-self: end;
+  align-content: flex-end;
+  min-height: calc(2 * 21.4px + 4px); /* room for the tags to wrap onto a second row */
+}
+
+.tr-grey .deal__logo {
+  background: var(--color-surface);
+}
